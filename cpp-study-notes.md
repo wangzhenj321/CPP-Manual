@@ -1,4 +1,4 @@
-1. `using namespace std;`
+1. `using namespace std;` (All the elements in the standard C++ library are declared within what is called a *namespace*: the namespace `std`.)
 2. `auto`
 3. `decltype`
 4. `int a=5;` (c-like initialization)
@@ -9,5 +9,5 @@
 9. `75 // int` or `75u // unsigned int` or `75l // long` or `75ul // unsigned long` or `75lu // unsigned long` 
 10.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU1NjMzMDVdfQ==
+eyJoaXN0b3J5IjpbLTE0MDMxODEyNTNdfQ==
 -->
