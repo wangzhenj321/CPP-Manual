@@ -6,7 +6,11 @@
 6. `int c{2};` (uniform initialization)
 7. `#include <string>`
 8. `75 // decimal` or `0113 // octal` or `0x4b // hexadecimal`
-9. 
+9. `75 // int` or `75u // unsigned int
+75l        // long
+75ul       // unsigned long 
+75lu       // unsigned long 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2ODA5NzEwXX0=
+eyJoaXN0b3J5IjpbLTE3OTcxNTM4MzFdfQ==
 -->
