@@ -8,7 +8,10 @@
 8. `75 // decimal` or `0113 // octal` or `0x4b // hexadecimal`
 9. `75 // int` or `75u // unsigned int` or `75l // long` or `75ul // unsigned long` or `75lu // unsigned long` 
 10.  `u // char16_t` or `U // char32_t` or `L // wchar_t`
-11. 
+11. `R"&%$(string with \backslash)&%$"`
+12. `nullptr`
+13. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTQxNDcyN119
+eyJoaXN0b3J5IjpbODI1NjQwNDYzXX0=
 -->
