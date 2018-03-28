@@ -10,8 +10,9 @@
 10.  `u // char16_t` or `U // char32_t` or `L // wchar_t`
 11. `R"&%$(string with \backslash)&%$"`
 12. `nullptr`
-13. 
+13. `const double pi = 3.1415926;`
+14. `#define identifier replacement`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NjQwNDYzXX0=
+eyJoaXN0b3J5IjpbMTUxNDg3MTkzM119
 -->
