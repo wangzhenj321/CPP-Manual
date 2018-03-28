@@ -11,8 +11,8 @@
 11. `R"&%$(string with \backslash)&%$"`
 12. `nullptr`
 13. `const double pi = 3.1415926;`
-14. `#define identifier replacement`
+14. `#define identifier replacement` (replacement is any sequence of characters until the end of the line)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDg3MTkzM119
+eyJoaXN0b3J5IjpbLTE3OTI3OTA4OTRdfQ==
 -->
