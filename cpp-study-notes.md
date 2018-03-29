@@ -47,7 +47,8 @@
 6. By convention, the end of strings represented in character sequences is signaled by a special character: the null character, whose literal value can be written as '\0' (backslash, zero).
 7. `char myword[] = { 'H', 'e', 'l', 'l', 'o', '\0' };` or `char myword[] = "Hello";`
 8. `cout << mystring.c_str();`
-9. `foo = &myvar;`
+9. `foo = &myvar;` (address-of operator)
+10.`baz = *foo;` () 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDY4NzE5OF19
+eyJoaXN0b3J5IjpbLTE5NzUyOTg2MDJdfQ==
 -->
