@@ -24,8 +24,8 @@
 ## Program structure
 1. `for ( declaration : range ) statement;`
 2. `void duplicate (int& a, int& b, int& c)`
-3. 
+3. `string concatenate (const string& a, const string& b)`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNzEwNzI0XX0=
+eyJoaXN0b3J5IjpbLTE1ODA3NDAxOThdfQ==
 -->
