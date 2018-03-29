@@ -156,11 +156,13 @@
 	```c++
 	CVector CVector::operator+ (const CVector& param) {
 		CVector temp;
-			temp.x = x + param.x;
-			temp.y = y + param.y;
-			return temp;
-		}
+		temp.x = x + param.x;
+		temp.y = y + param.y;
+		return temp;
+	}
+	```
+9. 
 		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjY5NzQ5MV19
+eyJoaXN0b3J5IjpbNDM0NDIzNDU2XX0=
 -->
