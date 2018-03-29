@@ -162,10 +162,10 @@
 	}
 	```
 9. ```c++
-int get() const {return x;}        // const member function
-const int& get() {return x;}       // member function returning a const&
-const int& get() const {return x;} // const member function returning a const& 
-```
+	int get() const {return x;}        // const member function
+	const int& get() {return x;}       // member function returning a const&
+	const int& get() const {return x;} // const member function returning a const& 
+	```
 10. **class templates**
 	```c++
 	template <class T>
@@ -176,12 +176,14 @@ const int& get() const {return x;} // const member function returning a const&
 	    return retval;
 	}
 	```
+
 11. **class template specialization**
 	There is no "inheritance" of members from the generic template to the specialization.
 	```c++
 	template <class T> class mycontainer { ... };
 	template <> class mycontainer <char> { ... };
 	```
+
 12. **class special members**
 
     | Member function |	typical form for class C:|
@@ -192,7 +194,9 @@ const int& get() const {return x;} // const member function returning a const&
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
+ 
+ 13. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzM3NTAzNl19
+eyJoaXN0b3J5IjpbLTU3MzQyMjg4XX0=
 -->
