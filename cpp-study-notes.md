@@ -171,11 +171,13 @@
 	template <class T>
 	T mypair<T>::getmax ()
 	{
-	  T retval;
-	  retval = a>b? a : b;
-	  return retval;
-}
+		T retval;
+		retval = a>b? a : b;
+		return retval;
+	}
+	```
+11. 
 		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTQzODIwN119
+eyJoaXN0b3J5IjpbLTk3ODQxNjI1XX0=
 -->
