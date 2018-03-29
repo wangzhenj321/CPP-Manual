@@ -31,6 +31,8 @@
 7. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
 8. `x = sum<int>(10,20);`
 9. `template <class T, int N> T fixed_multiply (T val)`
+10. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
+11. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg0MzMzMjZdfQ==
+eyJoaXN0b3J5IjpbMTk0MjYwMDg2NF19
 -->
