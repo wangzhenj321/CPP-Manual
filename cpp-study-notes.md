@@ -74,7 +74,8 @@
 		member_type2 member_name2;
 		member_type3 member_name3;
 		...
-	} object_names;```
+	} object_names;
+	```
 26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
 27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
 28. ```c++
@@ -132,5 +133,5 @@
 	}```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMjU0NTU2Ml19
+eyJoaXN0b3J5IjpbMTkzNzI1ODY5Ml19
 -->
