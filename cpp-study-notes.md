@@ -171,9 +171,9 @@
 	template <class T>
 	T mypair<T>::getmax ()
 	{
-		T retval;
-		retval = a>b? a : b;
-		return retval;
+	    T retval;
+	    retval = a>b? a : b;
+	    return retval;
 	}
 	```
 11. **class template specialization**
@@ -194,5 +194,5 @@
 	| Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzY4MjMwNF19
+eyJoaXN0b3J5IjpbMzE1OTk2MF19
 -->
