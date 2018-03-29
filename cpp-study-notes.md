@@ -179,8 +179,8 @@
 11. **class template specialization**
 	There is no "inheritance" of members from the generic template to the specialization.
 	```c++
-		template <class T> class mycontainer { ... };
-		template <> class mycontainer <char> { ... };
+	template <class T> class mycontainer { ... };
+	template <> class mycontainer <char> { ... };
 	```
 12. **class special members**
 
@@ -194,5 +194,5 @@
 	| Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjkzNjQ0OF19
+eyJoaXN0b3J5IjpbLTU3NzY4MjMwNF19
 -->
