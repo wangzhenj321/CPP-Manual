@@ -107,12 +107,13 @@
 ## Classes
 1. ```c++
 	class class_name {
-  access_specifier_1:
-    member1;
-  access_specifier_2:
-    member2;
-  ...
-} object_names;
+		access_specifier_1:
+			member1;
+		access_specifier_2:
+			member2;
+		...
+	} object_names;```
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDQ3NjQyOF19
+eyJoaXN0b3J5IjpbLTk4ODc3ODg2XX0=
 -->
