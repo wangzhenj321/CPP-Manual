@@ -78,7 +78,15 @@
 	```
 26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
 27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (type aliases)
-28. ``
+28. ```c++
+	union type_name {
+		member_type1 member_name1;
+		member_type2 member_name2;
+		member_type3 member_name3;
+		...
+	} object_names;
+	```
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzY2NTY1N119
+eyJoaXN0b3J5IjpbLTQ0OTYzOTAzMF19
 -->
