@@ -35,7 +35,9 @@
 11. `myNamespace::a` (scope operator ::) (namespaces can be split)
 12. `using first::x;` vs `using namespace first;`
 13. All the entities (variables, types, constants, and functions) of the standard C++ library are declared within the std namespace.
-14. global variable 
+14. global variable (static storage) (Variables with static storage (such as global variables) that are not explicitly initialized are automatically initialized to zeroes.)
+15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
+16. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTkzMDAzNzRdfQ==
+eyJoaXN0b3J5IjpbMzY4OTk3OTIxXX0=
 -->
