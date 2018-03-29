@@ -87,6 +87,7 @@
 	} object_names;
 	```
 29. ```c++
+	// structure with anonymous union
 	struct book2_t {
 		char title[50];
 		char author[50];
@@ -96,7 +97,14 @@
 		};
 	} book2;
 	```
-30. 
+30. ```c++
+	enum type_name {
+  value1,
+  value2,
+  value3,
+  .
+  .
+} object_names;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMjYwODE2OV19
+eyJoaXN0b3J5IjpbMTY3MzM3MDQ1NF19
 -->
