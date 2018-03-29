@@ -150,8 +150,7 @@
 	  Circle baz {30.0};   // uniform init
 	  Circle qux = {40.0}; // POD-like
 	```
-6. `Rectangle::Rectangle (int x, int y) : width(x) { height=y; }
-`
+6. `Rectangle::Rectangle (int x, int y) : width(x) { height=y; }` (member initialization)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0Mzc3Nzk5M119
+eyJoaXN0b3J5IjpbLTI5Mjk3OTc2NF19
 -->
