@@ -27,8 +27,8 @@
 3. `string concatenate (const string& a, const string& b)`
 4. `inline string concatenate (const string& a, const string& b)`
 5. `int divide (int a, int b=2)`
-6. 
+6. ``
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyMTc0NTM1XX0=
+eyJoaXN0b3J5IjpbLTE3OTcwOTgyMzNdfQ==
 -->
