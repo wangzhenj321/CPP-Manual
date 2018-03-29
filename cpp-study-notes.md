@@ -60,6 +60,7 @@
 	-  `int * const p3 = &x;  // const pointer to non-const int`
 	- `const int * const p4 = &x;  // const pointer to const int`
 	- `int const * p2b = &x;  // also non-const pointer to const int`
+17. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjQ3MzcyNl19
+eyJoaXN0b3J5IjpbODgzNzY5MDQ4XX0=
 -->
