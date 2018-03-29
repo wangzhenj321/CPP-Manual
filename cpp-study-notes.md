@@ -50,7 +50,8 @@
 9. `foo = &myvar;` (address-of operator)
 10. `baz = *foo;` (dereference operator)
 11. `int * p1, * p2;`
-12. 
+12. The main difference being that **mypointer** can be assigned a different address, whereas **myarray** can never be assigned anything.
+13. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODQ5MDQwNzBdfQ==
+eyJoaXN0b3J5IjpbLTE1ODkwNzI5NjRdfQ==
 -->
