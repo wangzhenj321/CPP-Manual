@@ -52,7 +52,7 @@
 11. `int * p1, * p2;`
 12. The main difference being that **mypointer** can be assigned a different address, whereas **myarray** can never be assigned anything.
 13. `a[5] = 0;` vs `*(a+5) = 0;`
-14. 
+14. adding one to a pointer, the pointer is made to point to the following element of the same type, and, therefore, the size in bytes of the type it points to is added to the pointer.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTAwOTk4Nl19
+eyJoaXN0b3J5IjpbMjgzMDExNDRdfQ==
 -->
