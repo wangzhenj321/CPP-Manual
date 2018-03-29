@@ -188,10 +188,10 @@
     | Default constructor |	C::C(); |
     | Destructor | C::~C(); |
     | Copy constructor |	C::C (const C&); |
-	| Copy assignment |	C& operator= (const C&); |
-	| Move constructor | C::C (C&&); |
-	| Move assignment |	C& operator= (C&&); |
+    | Copy assignment |	C& operator= (const C&); |
+    | Move constructor | C::C (C&&); |
+    | Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTg4MDQ0Nl19
+eyJoaXN0b3J5IjpbLTE5MzEzOTQ3MzBdfQ==
 -->
