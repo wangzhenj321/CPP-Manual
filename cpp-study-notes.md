@@ -116,8 +116,9 @@
 2. - **private** members of a class are accessible only from within other members of the same class (or from their **friends**)
 	- **protected** members are accessible from other members of the same class (or from their **friends**), but also from members of their derived classes
 	- **public** members are accessible from anywhere where the object is visible
-	- By default, all members of a class declared with the class keyword have **private** access for all its members.
+	
+	By default, all members of a class declared with the class keyword have **private** access for all its members.
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDI2MjQ2NzRdfQ==
+eyJoaXN0b3J5IjpbLTc4ODgxNDA0MV19
 -->
