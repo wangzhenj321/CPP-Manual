@@ -136,7 +136,14 @@
 		height = y;
 	}
 	```
-4. `
+4. ```c++
+	Rectangle::Rectangle () {
+		width = 5;
+		height = 5;
+	}
+	
+	Rectangle rectb;	//
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODAxNzMwXX0=
+eyJoaXN0b3J5IjpbNTM2OTc5MTk3XX0=
 -->
