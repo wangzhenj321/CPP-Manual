@@ -25,8 +25,9 @@
 1. `for ( declaration : range ) statement;`
 2. `void duplicate (int& a, int& b, int& c)`
 3. `string concatenate (const string& a, const string& b)`
-4. 
+4. `inline string concatenate (const string& a, const string& b)`
+5. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5MTg2MTc4XX0=
+eyJoaXN0b3J5IjpbLTQ5MzY4MDU5MF19
 -->
