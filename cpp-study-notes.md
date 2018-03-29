@@ -86,7 +86,14 @@
 		...
 	} object_names;
 	```
-29. 
+29. ```c++
+	struct book2_t {
+		char title[50];
+		char author[50];union {
+    float dollars;
+    int yen;
+  };
+} book2;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1Mzc2NDkzXX0=
+eyJoaXN0b3J5IjpbLTc4OTA0ODMyMF19
 -->
