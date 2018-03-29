@@ -68,7 +68,7 @@
 22. `pointer = new type` and `pointer = new type [number_of_elements]` (dynamic memory)
 23. `foo = new (nothrow) int [5];` (`#include <new>`) (When a memory allocation fails, instead of throwing a **bad_alloc** exception or terminating the program, the pointer returned by new is a null pointer, and the program continues its execution normally.)
 24. `delete pointer;` vs `delete[] pointer;`
-25.  ```c++
+25. ```c++
 	struct type_name {
 		member_type1 member_name1;
 		member_type2 member_name2;
@@ -89,11 +89,13 @@
 29. ```c++
 	struct book2_t {
 		char title[50];
-		char author[50];union {
-    float dollars;
-    int yen;
-  };
-} book2;
+		char author[50];
+		union {
+			float dollars;
+			int yen;
+		};
+	} book2;
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTA0ODMyMF19
+eyJoaXN0b3J5IjpbLTExODU3ODYwODhdfQ==
 -->
