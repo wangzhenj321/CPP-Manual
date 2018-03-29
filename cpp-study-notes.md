@@ -57,9 +57,9 @@
 16. `int x;`
 	- `int * p1 = &x;  // non-const pointer to non-const int`
 	- `const int * p2 = &x;  // non-const pointer to const int`
-      int * const p3 = &x;  // const pointer to non-const int
-const int * const p4 = &x;  // const pointer to const int
-```
+	-  `int * const p3 = &x;  // const pointer to non-const int`
+	- `const int * const p4 = &x;  // const pointer to const int`
+	- `int const * p2b = &x;  // also non-const pointer to const int`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NTU3MDg2NV19
+eyJoaXN0b3J5IjpbLTIxNjQ3MzcyNl19
 -->
