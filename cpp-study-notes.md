@@ -67,7 +67,7 @@
 21. `int operation (int x, int y, int (*functocall)(int,int))` (pointers to functions)
 22. `pointer = new type` and `pointer = new type [number_of_elements]` (dynamic memory)
 23. `foo = new (nothrow) int [5];` (`#include <new>`) (When a memory allocation fails, instead of throwing a **bad_alloc** exception or terminating the program, the pointer returned by new is a null pointer, and the program continues its execution normally.)
-24. 
+24. `delete pointer;` vs ``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzk5NDE2NTBdfQ==
+eyJoaXN0b3J5IjpbLTE3ODMyOTY3NDZdfQ==
 -->
