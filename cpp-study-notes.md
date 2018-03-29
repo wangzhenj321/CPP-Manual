@@ -40,7 +40,8 @@
 
 ## Compound data types
 1. `int bar [5] = { 10, 20, 30 };`
-2. 
+2. `int jimmy [3][5];`
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTA5MDYzNF19
+eyJoaXN0b3J5IjpbMTc2MTMxMTk1M119
 -->
