@@ -177,11 +177,12 @@
 	}
 	```
 11. **class template specialization**
+	There is no "inheritance" of members from the generic template to the specialization.
 	```c++
 		template <class T> class mycontainer { ... };
 		template <> class mycontainer <char> { ... };
 	```
-		
+12. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTc1NTQ3XX0=
+eyJoaXN0b3J5IjpbNzczNTM2MzU2XX0=
 -->
