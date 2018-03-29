@@ -1,4 +1,4 @@
-## ### Basics of C++
+## Basics of C++
 1. `using namespace std;` (All the elements in the standard C++ library are declared within what is called a *namespace*: the namespace `std`.)
 2. `auto`
 3. `decltype`
@@ -20,9 +20,11 @@
 19. `cin >> a >> b;`
 20. `getline(cin, str);`
 21. `#include <sstream>` => `stringstream`
-22. `for ( declaration : range ) statement;`
-23. 
+
+## Program structure
+1. `for ( declaration : range ) statement;`
+2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzg5ODg1MF19
+eyJoaXN0b3J5IjpbLTIwNTg4ODc2NzRdfQ==
 -->
