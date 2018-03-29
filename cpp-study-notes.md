@@ -34,7 +34,8 @@
 10. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
 11. `myNamespace::a` (scope operator ::) (namespaces can be split)
 12. `using first::x;` vs `using namespace first;`
-13. 
+13. All the entities (variables, types, constants, and functions) of the standard C++ library are declared within the std namespace.
+14. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODAyMTg4Nl19
+eyJoaXN0b3J5IjpbNzUxNTcxNTY5XX0=
 -->
