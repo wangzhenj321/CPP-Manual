@@ -41,7 +41,7 @@
 ## Compound data types
 1. `int bar [5] = { 10, 20, 30 };`
 2. `int jimmy [3][5];`
-3. 
+3. `void procedure (int arg[])`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTMxMTk1M119
+eyJoaXN0b3J5IjpbLTE0MTcyNTI3MDJdfQ==
 -->
