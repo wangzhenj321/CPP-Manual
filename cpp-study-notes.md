@@ -42,7 +42,8 @@
 1. `int bar [5] = { 10, 20, 30 };`
 2. `int jimmy [3][5];`
 3. `void procedure (int arg[])`
-4. 
+4. `void procedure (int myarray[][3][4])`
+5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjgyNTU5MDZdfQ==
+eyJoaXN0b3J5IjpbLTQxODc3ODA3NF19
 -->
