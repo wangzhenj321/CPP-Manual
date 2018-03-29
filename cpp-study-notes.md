@@ -49,7 +49,8 @@
 8. `cout << mystring.c_str();`
 9. `foo = &myvar;` (address-of operator)
 10. `baz = *foo;` (dereference operator)
-11. ``
+11. `int * p1, * p2;`
+12. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU1NDU2NDc2XX0=
+eyJoaXN0b3J5IjpbLTEzODQ5MDQwNzBdfQ==
 -->
