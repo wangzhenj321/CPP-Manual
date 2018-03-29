@@ -183,16 +183,16 @@
 		template <> class mycontainer <char> { ... };
 	```
 12. **class special members**
-13. 
+
 	| Member function |	typical form for class C:|
 	| --- | --- |
- | Default constructor |	C::C(); |
- | Destructor | C::~C(); |
- | Copy constructor |	C::C (const C&); |
- | Copy assignment |	C& operator= (const C&); |
- | Move constructor | C::C (C&&); |
- | Move assignment |	C& operator= (C&&); |
+	| Default constructor |	C::C(); |
+	| Destructor | C::~C(); |
+	| Copy constructor |	C::C (const C&); |
+	| Copy assignment |	C& operator= (const C&); |
+	| Move constructor | C::C (C&&); |
+	| Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDc3MDM3Ml19
+eyJoaXN0b3J5IjpbLTY2NjkzNjQ0OF19
 -->
