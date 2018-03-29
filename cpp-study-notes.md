@@ -33,7 +33,8 @@
 9. `template <class T, int N> T fixed_multiply (T val)`
 10. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
 11. `myNamespace::a` (scope operator ::) (namespaces can be split)
-12. `using first::x;` vs ``
+12. `using first::x;` vs `using namespace first;`
+13. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc2MDMxNzZdfQ==
+eyJoaXN0b3J5IjpbMTI5ODAyMTg4Nl19
 -->
