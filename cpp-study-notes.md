@@ -17,7 +17,8 @@
 17. `x = sizeof (char);`
 18. `\n` vs `endl`
 19. `cin >> a >> b;`
+20. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzgxMTEwMl19
+eyJoaXN0b3J5IjpbLTkwOTI1MTM2NF19
 -->
