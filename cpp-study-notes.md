@@ -16,8 +16,8 @@
 16. bitwise operators
 17. `x = sizeof (char);`
 18. `\n` vs `endl`
-19. 
+19. `cin >> a >> b;`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzIwNDE0MF19
+eyJoaXN0b3J5IjpbMTY5NzgxMTEwMl19
 -->
