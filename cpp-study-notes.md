@@ -77,7 +77,7 @@
 	} object_names;
 	```
 26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
-27. 
+27. `typedef existing_type new_type_name;` (type aliases)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Mjc1NTgwN119
+eyJoaXN0b3J5IjpbNzQ4OTIzNzM5XX0=
 -->
