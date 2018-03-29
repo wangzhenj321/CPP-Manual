@@ -76,7 +76,8 @@
 		...
 	} object_names;
 	```
-26. `
+26. `getline (cin, pmovie->title);` (arrow operator)
+27. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjYyNTcwMzVdfQ==
+eyJoaXN0b3J5IjpbMTAxMDI4MjkxM119
 -->
