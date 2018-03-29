@@ -42,6 +42,7 @@
 1. `int bar [5] = { 10, 20, 30 };`
 2. `int jimmy [3][5];`
 3. `void procedure (int arg[])`
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTcyNTI3MDJdfQ==
+eyJoaXN0b3J5IjpbLTE3NjgyNTU5MDZdfQ==
 -->
