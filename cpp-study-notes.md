@@ -15,9 +15,9 @@
 15. `a = (b=3, b+2);` (comma operator)
 16. bitwise operators
 17. `x = sizeof (char);`
-18. 
+18. `\n` vs `endl`
 19. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE0MzU2NDBdfQ==
+eyJoaXN0b3J5IjpbMTgzNzIwNDE0MF19
 -->
