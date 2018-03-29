@@ -76,7 +76,7 @@
 		...
 	} object_names;
 	```
-26. 
+26. `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDc0NzgzXX0=
+eyJoaXN0b3J5IjpbLTEyNjYyNTcwMzVdfQ==
 -->
