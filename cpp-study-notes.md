@@ -20,7 +20,8 @@
 20. `getline(cin, str);`
 21. `#include <sstream>` => `stringstream`
 22. `for ( declaration : range ) statement;`
+23. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjgxNjk4NV19
+eyJoaXN0b3J5IjpbMTAxMDgyNDYyOF19
 -->
