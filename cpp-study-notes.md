@@ -44,7 +44,8 @@
 3. `void procedure (int arg[])`
 4. `void procedure (int myarray[][3][4])`
 5. `#include <array>` `array<int,3> myarray {10,20,30};`
-6. 
+6. By convention, the end of strings represented in character sequences is signaled by a special character: the null character, whose literal value can be written as '\0' (backslash, zero).
+7. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQ4MzUwNjVdfQ==
+eyJoaXN0b3J5IjpbMTg5NDUxOTEwNV19
 -->
