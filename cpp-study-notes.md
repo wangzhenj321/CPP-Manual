@@ -30,7 +30,7 @@
 6. `void odd (int x);`
 7. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
 8. `x = sum<int>(10,20);`
-9. ``
+9. `template <class T, int N> T fixed_multiply (T val)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNTExMjM4XX0=
+eyJoaXN0b3J5IjpbLTE4ODg0MzMzMjZdfQ==
 -->
