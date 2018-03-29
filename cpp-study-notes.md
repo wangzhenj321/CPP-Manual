@@ -176,14 +176,12 @@
 	    return retval;
 	}
 	```
-
 11. **class template specialization**
 	There is no "inheritance" of members from the generic template to the specialization.
 	```c++
 	template <class T> class mycontainer { ... };
 	template <> class mycontainer <char> { ... };
 	```
-
 12. **class special members**
 
     | Member function |	typical form for class C:|
@@ -194,9 +192,8 @@
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
- 
  13. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MzQyMjg4XX0=
+eyJoaXN0b3J5IjpbLTE0NzMyOTEyNTRdfQ==
 -->
