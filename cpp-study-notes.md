@@ -16,7 +16,8 @@
 16. bitwise operators
 17. `x = sizeof (char);`
 18. 
+19. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Mjk2MjA0XX0=
+eyJoaXN0b3J5IjpbLTE2NzE0MzU2NDBdfQ==
 -->
