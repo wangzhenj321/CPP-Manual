@@ -178,9 +178,10 @@
 	```
 11. **class template specialization**
 	```c++
+		template <class T> class mycontainer { ... };
 		template <> class mycontainer <char> { ... };
 	```
 		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDM3NzY4OV19
+eyJoaXN0b3J5IjpbLTk2MTc1NTQ3XX0=
 -->
