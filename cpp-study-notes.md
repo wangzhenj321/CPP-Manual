@@ -162,10 +162,10 @@
 	}
 	```
 9. ```c++
-    int get() const {return x;}        // const member function
-    const int& get() {return x;}       // member function returning a const&
-    const int& get() const {return x;} // const member function returning a const& 
-    ```
+int get() const {return x;}        // const member function
+const int& get() {return x;}       // member function returning a const&
+const int& get() const {return x;} // const member function returning a const& 
+```
 10. **class templates**
 	```c++
 	template <class T>
@@ -194,5 +194,5 @@
     | Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTU1NTkwMF19
+eyJoaXN0b3J5IjpbLTY2NzM3NTAzNl19
 -->
