@@ -152,7 +152,7 @@
 	```
 6. `Rectangle::Rectangle (int x, int y) : width(x) { height=y; }` (member initialization)
 7. Classes can be defined not only with keyword **class**, but also with keywords **struct** and **union**.
-8. overloadable operators
+8. **overloadable operators**
 	```c++
 	CVector CVector::operator+ (const CVector& param) {
 		CVector temp;
@@ -166,8 +166,16 @@
 	const int& get() {return x;}       // member function returning a const&
 	const int& get() const {return x;} // const member function returning a const& 
 	```
-10. 
+10. **class templates**
+	```c++
+	template <class T>
+	T mypair<T>::getmax ()
+	{
+	  T retval;
+	  retval = a>b? a : b;
+	  return retval;
+}
 		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQ3MjYwODNdfQ==
+eyJoaXN0b3J5IjpbMTE0MTQzODIwN119
 -->
