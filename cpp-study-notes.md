@@ -46,6 +46,8 @@
 5. `#include <array>` `array<int,3> myarray {10,20,30};`
 6. By convention, the end of strings represented in character sequences is signaled by a special character: the null character, whose literal value can be written as '\0' (backslash, zero).
 7. `char myword[] = { 'H', 'e', 'l', 'l', 'o', '\0' };` or `char myword[] = "Hello";`
+8. `cout << mystring.c_str();`
+9. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzcxOTk5NzVdfQ==
+eyJoaXN0b3J5IjpbLTE1NjY0OTAyMDldfQ==
 -->
