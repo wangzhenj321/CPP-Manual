@@ -142,8 +142,9 @@
 		height = 5;
 	}
 	
-	Rectangle rectb;	//
+	Rectangle rectb;	// default constructor
 	```
+5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2OTc5MTk3XX0=
+eyJoaXN0b3J5IjpbLTEzOTk5MDkwODFdfQ==
 -->
