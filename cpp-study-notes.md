@@ -113,9 +113,10 @@
 			member2;
 		...
 	} object_names;```
-2. - **private** members of a class are accessible only from within other members of the same class (or from their "friends").
-protected members are accessible from other members of the same class (or from their "friends"), but also from members of their derived classes.
-Finally, public members are accessible from anywhere where the object is visible.
+2. - **private** members of a class are accessible only from within other members of the same class (or from their **friends**)
+	- **protected** members are accessible from other members of the same class (or from their **friends**), but also from members of their derived classes
+	- **public** members are accessible from anywhere where the object is visible
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTkwOTk1NV19
+eyJoaXN0b3J5IjpbLTEyMTk1NTQwNTFdfQ==
 -->
