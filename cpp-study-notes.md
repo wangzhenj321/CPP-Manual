@@ -29,7 +29,8 @@
 5. `int divide (int a, int b=2)`
 6. `void odd (int x);`
 7. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
-8. 
+8. `x = sum<int>(10,20);`
+9. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY0MjYwMjddfQ==
+eyJoaXN0b3J5IjpbNzcyOTQxODk0XX0=
 -->
