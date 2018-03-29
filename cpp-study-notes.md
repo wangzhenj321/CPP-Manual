@@ -12,7 +12,10 @@
 12. `nullptr`
 13. `const double pi = 3.1415926;`
 14. `#define identifier replacement` (replacement is any sequence of characters until the end of the line)
+15. `a = (b=3, b+2);` (comma operator)
+16. bitwise operators
+17. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTI3OTA4OTRdfQ==
+eyJoaXN0b3J5IjpbMTY4OTg5MDYwNF19
 -->
