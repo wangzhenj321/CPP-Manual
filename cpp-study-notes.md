@@ -84,7 +84,8 @@
 		member_type2 member_name2;
 		member_type3 member_name3;
 		...
-	} object_names;```
+	} object_names;
+	```
 29. ```c++
 	// structure with anonymous union
 	struct book2_t {
@@ -94,7 +95,8 @@
 			float dollars;
 			int yen;
 		};
-	} book2;```
+	} book2;
+	```
 30. ```c++
 	// enumerated types (enum)
 	enum type_name {
@@ -102,7 +104,8 @@
 		value2,
 		value3,
 		...
-	} object_names;```
+	} object_names;
+	```
 31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 
 ## Classes
@@ -113,7 +116,8 @@
 		access_specifier_2:
 			member2;
 		...
-	} object_names;```
+	} object_names;
+	```
 2. - **private** members of a class are accessible only from within other members of the same class (or from their **friends**)
 	- **protected** members are accessible from other members of the same class (or from their **friends**), but also from members of their derived classes
 	- **public** members are accessible from anywhere where the object is visible
@@ -130,8 +134,9 @@
 	void Rectangle::set_values (int x, int y) {
 		width = x;
 		height = y;
-	}```
+	}
+	```
 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzI1ODY5Ml19
+eyJoaXN0b3J5IjpbMTM2MjYxNjYyNl19
 -->
