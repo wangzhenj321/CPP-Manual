@@ -192,8 +192,9 @@
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
- 13. 
+ 13. `friend Rectangle duplicate (const Rectangle&);` (**friend functions**)
+ 14. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzMyOTEyNTRdfQ==
+eyJoaXN0b3J5IjpbMTM1MDI0NjkwMV19
 -->
