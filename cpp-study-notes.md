@@ -39,7 +39,8 @@
 15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
 
 ## Compound data types
-1. 
+1. `int bar [5] = { 10, 20, 30 };`
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2NzAyODY5XX0=
+eyJoaXN0b3J5IjpbMTE3MTA5MDYzNF19
 -->
