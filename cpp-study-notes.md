@@ -28,7 +28,8 @@
 4. `inline string concatenate (const string& a, const string& b)`
 5. `int divide (int a, int b=2)`
 6. `void odd (int x);`
-
+7. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
+8. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyNDkzODc5XX0=
+eyJoaXN0b3J5IjpbLTEwOTY0MjYwMjddfQ==
 -->
