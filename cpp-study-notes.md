@@ -32,7 +32,7 @@
 8. `x = sum<int>(10,20);`
 9. `template <class T, int N> T fixed_multiply (T val)`
 10. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
-11. 
+11. `myNamespace::a` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjYwMDg2NF19
+eyJoaXN0b3J5IjpbMTgzODkzMTg3NF19
 -->
