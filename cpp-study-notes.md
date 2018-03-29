@@ -153,7 +153,14 @@
 6. `Rectangle::Rectangle (int x, int y) : width(x) { height=y; }` (member initialization)
 7. Classes can be defined not only with keyword **class**, but also with keywords **struct** and **union**.
 8. overloadable operators
-9. 
+	```c++
+	CVector CVector::operator+ (const CVector& param) {
+		CVector temp;
+			temp.x = x + param.x;
+			temp.y = y + param.y;
+			return temp;
+		}
+		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjI1NDc4Ml19
+eyJoaXN0b3J5IjpbMTUzMjY5NzQ5MV19
 -->
