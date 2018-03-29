@@ -64,6 +64,7 @@
 18. `void increase (void* data, int psize)` (void pointers)
 19. `int * p = 0;` vs `int * q = nullptr;`
 20. Do not confuse **null pointers** with **void pointers**! A null pointer is a value that any pointer can take to represent that it is pointing to "nowhere", while a void pointer is a type of pointer that can point to somewhere without a specific type. One refers to the value stored in the pointer, and the other to the type of data it points to.
+21. `int operation (int x, int y, int (*functocall)(int,int))` (pointers to functions)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDc5NDIyNV19
+eyJoaXN0b3J5IjpbLTI5NzMyMDQxNV19
 -->
