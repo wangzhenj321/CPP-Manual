@@ -39,13 +39,13 @@
 15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
 
 ## Compound data types
-1. `int bar [5] = { 10, 20, 30 };`
+1. `int bar [5] = { 10, 20, 30 };` (Arrays cannot be assigned values.)
 2. `int jimmy [3][5];`
 3. `void procedure (int arg[])`
 4. `void procedure (int myarray[][3][4])`
 5. `#include <array>` `array<int,3> myarray {10,20,30};`
 6. By convention, the end of strings represented in character sequences is signaled by a special character: the null character, whose literal value can be written as '\0' (backslash, zero).
-7. 
+7. `char myword[] = { 'H', 'e', 'l', 'l', 'o', '\0' };` or `char myword[] = "Hello";`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDUxOTEwNV19
+eyJoaXN0b3J5IjpbLTE1NzcxOTk5NzVdfQ==
 -->
