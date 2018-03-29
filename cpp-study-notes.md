@@ -182,7 +182,9 @@
 		template <class T> class mycontainer { ... };
 		template <> class mycontainer <char> { ... };
 	```
-12. *
+12. **default constructor**
+13. **destructor**
+14. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzAzOTc1MF19
+eyJoaXN0b3J5IjpbLTEyNDY2MjcwODldfQ==
 -->
