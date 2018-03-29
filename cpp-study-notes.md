@@ -183,6 +183,7 @@
 	template <> class mycontainer <char> { ... };
 	```
 12. **class special members**
+
     | Member function |	typical form for class C:|
     | --- | --- |
     | Default constructor |	C::C(); |
@@ -193,5 +194,5 @@
     | Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzEzOTQ3MzBdfQ==
+eyJoaXN0b3J5IjpbLTE3OTM4OTU0MjBdfQ==
 -->
