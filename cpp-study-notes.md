@@ -1,3 +1,4 @@
+## ### Basics of C++
 1. `using namespace std;` (All the elements in the standard C++ library are declared within what is called a *namespace*: the namespace `std`.)
 2. `auto`
 3. `decltype`
@@ -23,5 +24,5 @@
 23. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDgyNDYyOF19
+eyJoaXN0b3J5IjpbLTYzNzg5ODg1MF19
 -->
