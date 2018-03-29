@@ -122,14 +122,15 @@
 	class Rectangle {
 		int width, height;
 		public:
-    void set_values (int,int);
-    int area() {return width*height;}
-};
-
-void Rectangle::set_values (int x, int y) {
-  width = x;
-  height = y;
-}
+			void set_values (int,int);
+			int area() {return width*height;}
+	};
+	
+	void Rectangle::set_values (int x, int y) {
+		width = x;
+		height = y;
+	}```
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk0ODA2Nl19
+eyJoaXN0b3J5IjpbMTkwMjU0NTU2Ml19
 -->
