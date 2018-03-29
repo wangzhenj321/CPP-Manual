@@ -61,6 +61,7 @@
 	- `const int * const p4 = &x;  // const pointer to const int`
 	- `int const * p2b = &x;  // also non-const pointer to const int`
 17. `char ** c;`
+18. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTAzNTA0Nl19
+eyJoaXN0b3J5IjpbNDQ4NjYzNjQzXX0=
 -->
