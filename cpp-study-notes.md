@@ -95,13 +95,14 @@
 		};
 	} book2;```
 30. ```c++
+	// enumerated types (enum)
 	enum type_name {
 		value1,
 		value2,
 		value3,
 		...
 	} object_names;```
-31. 
+31. `enum class EyeColor : char {blue, green, brown}; `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjQ5MDM4XX0=
+eyJoaXN0b3J5IjpbMzM4NDg5MTMwXX0=
 -->
