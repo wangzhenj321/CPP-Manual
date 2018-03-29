@@ -43,7 +43,8 @@
 2. `int jimmy [3][5];`
 3. `void procedure (int arg[])`
 4. `void procedure (int myarray[][3][4])`
-5. 
+5. `#include <array>` `array<int,3> myarray {10,20,30};`
+6. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxODc3ODA3NF19
+eyJoaXN0b3J5IjpbLTE1OTQ4MzUwNjVdfQ==
 -->
