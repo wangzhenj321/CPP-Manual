@@ -39,8 +39,8 @@
 15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
 
 ## Compound data types
-1. `int bar [5] = { 10, 20, 30 };` (Arrays cannot be assigned values.)
-2. `int jimmy [3][5];`
+1. `int bar [5] = { 10, 20, 30 };` (initialize arrays) (Arrays cannot be assigned values.)
+2. `int jimmy [3][5];` (multidimensional arrays)
 3. `void procedure (int arg[])`
 4. `void procedure (int myarray[][3][4])`
 5. `#include <array>` `array<int,3> myarray {10,20,30};`
@@ -104,5 +104,5 @@
 	} object_names;```
 31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTM5MzEwOV19
+eyJoaXN0b3J5IjpbNTM0Njk3MjQ3XX0=
 -->
