@@ -102,7 +102,7 @@
 		value3,
 		...
 	} object_names;```
-31. `enum class EyeColor : char {blue, green, brown}; `
+31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NDg5MTMwXX0=
+eyJoaXN0b3J5IjpbMTQwMzkwOTg0NV19
 -->
