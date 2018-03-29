@@ -14,8 +14,9 @@
 14. `#define identifier replacement` (replacement is any sequence of characters until the end of the line)
 15. `a = (b=3, b+2);` (comma operator)
 16. bitwise operators
-17. 
+17. `x = sizeof (char);`
+18. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTg5MDYwNF19
+eyJoaXN0b3J5IjpbLTM4Mjk2MjA0XX0=
 -->
