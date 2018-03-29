@@ -182,7 +182,7 @@
 		template <class T> class mycontainer { ... };
 		template <> class mycontainer <char> { ... };
 	```
-12. 
+12. *
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNTM2MzU2XX0=
+eyJoaXN0b3J5IjpbMTczMzAzOTc1MF19
 -->
