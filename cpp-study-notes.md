@@ -118,7 +118,18 @@
 	- **public** members are accessible from anywhere where the object is visible
 	
 	By default, all members of a class declared with the class keyword have **private** access for all its members.
-3. 
+3. ```c++
+	class Rectangle {
+		int width, height;
+		public:
+    void set_values (int,int);
+    int area() {return width*height;}
+};
+
+void Rectangle::set_values (int x, int y) {
+  width = x;
+  height = y;
+}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODgxNDA0MV19
+eyJoaXN0b3J5IjpbLTE4MTk0ODA2Nl19
 -->
