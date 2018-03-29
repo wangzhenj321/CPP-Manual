@@ -35,7 +35,7 @@
 11. `myNamespace::a` (scope operator ::) (namespaces can be split)
 12. `using first::x;` vs `using namespace first;`
 13. All the entities (variables, types, constants, and functions) of the standard C++ library are declared within the std namespace.
-14. 
+14. global variable 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxNTcxNTY5XX0=
+eyJoaXN0b3J5IjpbLTE2NTkzMDAzNzRdfQ==
 -->
