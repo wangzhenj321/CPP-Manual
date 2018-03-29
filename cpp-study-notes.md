@@ -96,6 +96,7 @@
 		};
 	} book2;
 	```
+30. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU3ODYwODhdfQ==
+eyJoaXN0b3J5IjpbLTcyMjYwODE2OV19
 -->
