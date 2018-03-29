@@ -172,7 +172,7 @@
 	T mypair<T>::getmax ()
 	{
 	    T retval;
-	    retval = a>b? a : b;
+	    retval = a>b ? a : b;
 	    return retval;
 	}
 	```
@@ -183,16 +183,15 @@
 	template <> class mycontainer <char> { ... };
 	```
 12. **class special members**
-
-	| Member function |	typical form for class C:|
-	| --- | --- |
-	| Default constructor |	C::C(); |
-	| Destructor | C::~C(); |
-	| Copy constructor |	C::C (const C&); |
+    | Member function |	typical form for class C:|
+    | --- | --- |
+    | Default constructor |	C::C(); |
+    | Destructor | C::~C(); |
+    | Copy constructor |	C::C (const C&); |
 	| Copy assignment |	C& operator= (const C&); |
 	| Move constructor | C::C (C&&); |
 	| Move assignment |	C& operator= (C&&); |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1OTk2MF19
+eyJoaXN0b3J5IjpbMTI5NTg4MDQ0Nl19
 -->
