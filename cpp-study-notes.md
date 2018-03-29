@@ -76,7 +76,7 @@
 		...
 	} object_names;```
 26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
-27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (type aliases)
+27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
 28. ```c++
 	union type_name {
 		member_type1 member_name1;
@@ -104,5 +104,5 @@
 	} object_names;```
 31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMzkwOTg0NV19
+eyJoaXN0b3J5IjpbMTU1MTM5MzEwOV19
 -->
