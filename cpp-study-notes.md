@@ -161,8 +161,13 @@
 		return temp;
 	}
 	```
-9. 
+9. ```c++
+	int get() const {return x;}        // const member function
+	const int& get() {return x;}       // member function returning a const&
+	const int& get() const {return x;} // const member function returning a const& 
+	```
+10. 
 		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NDIzNDU2XX0=
+eyJoaXN0b3J5IjpbLTE4MjQ3MjYwODNdfQ==
 -->
