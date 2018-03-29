@@ -105,6 +105,14 @@
 31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 
 ## Classes
+1. ```c++
+	class class_name {
+  access_specifier_1:
+    member1;
+  access_specifier_2:
+    member2;
+  ...
+} object_names;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjgzNjAyMV19
+eyJoaXN0b3J5IjpbMTUxNDQ3NjQyOF19
 -->
