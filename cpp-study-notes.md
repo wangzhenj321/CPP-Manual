@@ -68,6 +68,7 @@
 22. `pointer = new type` and `pointer = new type [number_of_elements]` (dynamic memory)
 23. `foo = new (nothrow) int [5];` (`#include <new>`) (When a memory allocation fails, instead of throwing a **bad_alloc** exception or terminating the program, the pointer returned by new is a null pointer, and the program continues its execution normally.)
 24. `delete pointer;` vs `delete[] pointer;`
+25. ``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg3NDMxNTNdfQ==
+eyJoaXN0b3J5IjpbLTEzMzA3NTk3MDRdfQ==
 -->
