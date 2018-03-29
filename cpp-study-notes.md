@@ -48,7 +48,8 @@
 7. `char myword[] = { 'H', 'e', 'l', 'l', 'o', '\0' };` or `char myword[] = "Hello";`
 8. `cout << mystring.c_str();`
 9. `foo = &myvar;` (address-of operator)
-10.`baz = *foo;` () 
+10. `baz = *foo;` (dereference operator)
+11. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUyOTg2MDJdfQ==
+eyJoaXN0b3J5IjpbLTIxMTQ3MjQwMDRdfQ==
 -->
