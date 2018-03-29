@@ -192,9 +192,18 @@
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
- 13. `friend Rectangle duplicate (const Rectangle&);` (**friend functions**)
- 14. 
+ 13. **friend functions**
+	 ```c++
+	 class Rectangle {
+		 int width, height;
+ public:
+    Rectangle() {}
+    Rectangle (int x, int y) : width(x), height(y) {}
+    int area() {return width * height;}
+    friend Rectangle duplicate (const Rectangle&);
+};
+ 15. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDI0NjkwMV19
+eyJoaXN0b3J5IjpbOTc0OTA3NzQ4XX0=
 -->
