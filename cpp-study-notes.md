@@ -23,8 +23,9 @@
 
 ## Program structure
 1. `for ( declaration : range ) statement;`
-2. 
+2. `void duplicate (int& a, int& b, int& c)`
+3. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg4ODc2NzRdfQ==
+eyJoaXN0b3J5IjpbOTEwNzEwNzI0XX0=
 -->
