@@ -93,16 +93,15 @@
 			float dollars;
 			int yen;
 		};
-	} book2;
-	```
+	} book2;```
 30. ```c++
 	enum type_name {
 		value1,
 		value2,
 		value3,
 		...
-	} object_names;
-	```
+	} object_names;```
+31. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzU0NjA4OF19
+eyJoaXN0b3J5IjpbLTg2MjQ5MDM4XX0=
 -->
