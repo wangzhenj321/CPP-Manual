@@ -55,7 +55,7 @@
 14. Adding one to a pointer, the pointer is made to point to the following element of the same type, and, therefore, the size in bytes of the type it points to is added to the pointer.
 15. `const int * current = start;` (These pointers point to constant content they cannot modify, but they are not constant themselves: i.e., the pointers can still be incremented or assigned different addresses, although they cannot modify the content they point to.)
 16. `int x;`
-    - `int * p1 = &x;  // non-const pointer to non-const int`
+	- `int * p1 = &x;  // non-const pointer to non-const int`
     - `const int * p2 = &x;  // non-const pointer to const int`
     -  `int * const p3 = &x;  // const pointer to non-const int`
     - `const int * const p4 = &x;  // const pointer to const int`
@@ -227,5 +227,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODk3MzM3NDJdfQ==
+eyJoaXN0b3J5IjpbOTM2MTMwODc0XX0=
 -->
