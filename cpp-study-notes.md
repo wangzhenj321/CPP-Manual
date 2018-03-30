@@ -163,14 +163,15 @@
 	Rectangle rectb;	// default constructor
 	```
 5. ```c++
-	  Circle foo (10.0);   // functional form
-	  Circle bar = 20.0;   // assignment init
-	  Circle baz {30.0};   // uniform init
-	  Circle qux = {40.0}; // POD-like
+	Circle foo (10.0);   // functional form
+	Circle bar = 20.0;   // assignment init
+	Circle baz {30.0};   // uniform init
+	Circle qux = {40.0}; // POD-like
 	```
 6. `Rectangle::Rectangle (int x, int y) : width(x) { height=y; }` (member initialization)
 7. Classes can be defined not only with keyword **class**, but also with keywords **struct** and **union**.
 8. **overloadable operators**
+
 	```c++
 	CVector CVector::operator+ (const CVector& param) {
 		CVector temp;
@@ -179,6 +180,7 @@
 		return temp;
 	}
 	```
+
 9. ```c++
 	int get() const {return x;}        // const member function
 	const int& get() {return x;}       // member function returning a const&
@@ -245,5 +247,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyMTk4MjM0XX0=
+eyJoaXN0b3J5IjpbMTg5NDgxOTUxOF19
 -->
