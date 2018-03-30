@@ -192,7 +192,7 @@
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
- 13. **friend functions**
+ 13. **friend function**
 	 ```c++
 	 class Rectangle {
 		 int width, height;
@@ -204,8 +204,24 @@
 	};
 	```
  14. **friend class**
- 
+ ```c++
+ class Rectangle {
+    int width, height;
+  public:
+    int area ()
+      {return (width * height);}
+    void convert (Square a);
+};
 
+class Square {
+  friend class Rectangle;
+  private:
+    int side;
+  public:
+    Square (int a) : side(a) {}
+};
+ ```
+15. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjU4Nzg2MV19
+eyJoaXN0b3J5IjpbLTEzOTE1NjAwNThdfQ==
 -->
