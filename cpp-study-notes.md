@@ -203,6 +203,7 @@
 			 friend Rectangle duplicate (const Rectangle&);
 	};
 	```
+
  14. **friend class**
 
     ```
@@ -219,5 +220,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyNDQ5Njc1XX0=
+eyJoaXN0b3J5IjpbMjk2NTE0NTUzXX0=
 -->
