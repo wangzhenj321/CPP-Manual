@@ -197,13 +197,14 @@
 	 class Rectangle {
 		 int width, height;
 		 public:
-    Rectangle() {}
-    Rectangle (int x, int y) : width(x), height(y) {}
-    int area() {return width * height;}
-    friend Rectangle duplicate (const Rectangle&);
-};
+			 Rectangle() {}
+			 Rectangle (int x, int y) : width(x), height(y) {}
+			 int area() {return width * height;}
+			 friend Rectangle duplicate (const Rectangle&);
+	};
+	```
  15. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDQ0OTc3Ml19
+eyJoaXN0b3J5IjpbLTEyNTQwNTU3NjRdfQ==
 -->
