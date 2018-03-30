@@ -203,8 +203,9 @@
 			 friend Rectangle duplicate (const Rectangle&);
 	};
 	```
- 15. 
+ 14. **friend class**
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQwNTU3NjRdfQ==
+eyJoaXN0b3J5IjpbLTg5NjU4Nzg2MV19
 -->
