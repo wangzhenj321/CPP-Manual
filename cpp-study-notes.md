@@ -244,9 +244,9 @@
        private:
            int side;
        public:
-          Square (int a) : side(a) {}
-};
-    ```
+           Square (int a) : side(a) {}
+   };
+   ```
 
 15. `class Rectangle: public Polygon`
 16. not inherited
@@ -264,5 +264,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwOTUwMTQ0XX0=
+eyJoaXN0b3J5IjpbMjAyNzMwMjM4Nl19
 -->
