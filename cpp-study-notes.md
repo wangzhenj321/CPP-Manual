@@ -229,7 +229,7 @@ class Square {
 - its private members
 17. `Son (int a) : Mother (a)`
 18. `class Rectangle: public Polygon, public Output;`
-19. 
+19. **
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1ODE1NTQxOF19
+eyJoaXN0b3J5IjpbLTIwOTMxNzExMTBdfQ==
 -->
