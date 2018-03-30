@@ -196,8 +196,8 @@
 
         ```c++
         class Rectangle {
-        int width, height;
-        public:
+            int width, height;
+   public:
 				Rectangle() {}
 				Rectangle (int x, int y) : width(x), height(y) {}
 				int area() {return width * height;}
@@ -224,5 +224,5 @@
 eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTgxODQ5OV19
+eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
