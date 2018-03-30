@@ -75,14 +75,16 @@
 25. **struct**
 
     ```c++
-    struct type_name {member_type1 member_name1;
-	member_type2 member_name2;
-	member_type3 member_name3;
-	...
-} object_names;
-	```
-27. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
-28. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
+    struct type_name {
+        member_type1 member_name1;
+        member_type2 member_name2;
+        member_type3 member_name3;
+        ...
+    } object_names;
+    ```
+
+26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
+2. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
 29. ```c++
 	union type_name {
 		member_type1 member_name1;
@@ -232,5 +234,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDc2ODk1NF19
+eyJoaXN0b3J5IjpbLTEyNDg1NDI4MzVdfQ==
 -->
