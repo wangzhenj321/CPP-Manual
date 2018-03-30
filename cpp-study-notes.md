@@ -172,14 +172,14 @@
 7. Classes can be defined not only with keyword **class**, but also with keywords **struct** and **union**.
 8. **overloadable operators**
 
-	```c++
-	CVector CVector::operator+ (const CVector& param) {
-		CVector temp;
-		temp.x = x + param.x;
-		temp.y = y + param.y;
-		return temp;
-	}
-	```
+    ```c++
+    CVector CVector::operator+ (const CVector& param) {
+        CVector temp;
+        temp.x = x + param.x;
+        temp.y = y + param.y;
+        return temp;
+    }
+    ```
 
 9. ```c++
 	int get() const {return x;}        // const member function
@@ -247,5 +247,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDgxOTUxOF19
+eyJoaXN0b3J5IjpbLTgyMzc2MDUwXX0=
 -->
