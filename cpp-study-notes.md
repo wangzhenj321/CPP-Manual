@@ -197,13 +197,13 @@
         ```c++
         class Rectangle {
             int width, height;
-   public:
-				Rectangle() {}
-				Rectangle (int x, int y) : width(x), height(y) {}
-				int area() {return width * height;}
-				friend Rectangle duplicate (const Rectangle&);
-		};
-		```
+            public:
+                Rectangle() {}
+                Rectangle (int x, int y) : width(x), height(y) {}
+                int area() {return width * height;}
+                friend Rectangle duplicate (const Rectangle&);
+        };
+        ```
  
  14. **friend class**
 
