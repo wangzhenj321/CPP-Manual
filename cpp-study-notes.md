@@ -1,4 +1,5 @@
 ## Basics of C++
+
 1. `using namespace std;` (All the elements in the standard C++ library are declared within what is called a *namespace*: the namespace `std`.)
 2. `auto`
 3. `decltype`
@@ -22,6 +23,7 @@
 21. `#include <sstream>` => `stringstream`
 
 ## Program structure
+
 1. `for ( declaration : range ) statement;`
 2. `void duplicate (int& a, int& b, int& c)` (In C++, **references** are indicated with an ampersand (&) following the parameter type.)
 3. `string concatenate (const string& a, const string& b)`
@@ -246,5 +248,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTk0MzUxMF19
+eyJoaXN0b3J5IjpbLTE4Mzg1MDk5NzRdfQ==
 -->
