@@ -194,10 +194,10 @@
     | Move assignment |	C& operator= (C&&); |
 13. **friend function**
 
-```c++
-		class Rectangle {
-			int width, height;
-			public:
+        ```c++
+        class Rectangle {
+        int width, height;
+        public:
 				Rectangle() {}
 				Rectangle (int x, int y) : width(x), height(y) {}
 				int area() {return width * height;}
@@ -224,5 +224,5 @@
 eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjYzMjkyNV19
+eyJoaXN0b3J5IjpbMTU4MTgxODQ5OV19
 -->
