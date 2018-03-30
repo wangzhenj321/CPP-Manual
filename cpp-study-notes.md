@@ -56,11 +56,13 @@
 15. `const int * current = start;` (These pointers point to constant content they cannot modify, but they are not constant themselves: i.e., the pointers can still be incremented or assigned different addresses, although they cannot modify the content they point to.)
 16. `int x;`
 
-	- `int * p1 = &x;  // non-const pointer to non-const int`
-    - `const int * p2 = &x;  // non-const pointer to const int`
-    -  `int * const p3 = &x;  // const pointer to non-const int`
-    - `const int * const p4 = &x;  // const pointer to const int`
-    - `int const * p2b = &x;  // also non-const pointer to const int`
+    ```c++
+    `int * p1 = &x;  // non-const pointer to non-const int`
+- `const int * p2 = &x;  // non-const pointer to const int`
+-  `int * const p3 = &x;  // const pointer to non-const int`
+- `const int * const p4 = &x;  // const pointer to const int`
+- `int const * p2b = &x;  // also non-const pointer to const int`
+
 17. `char ** c;`
 18. `void increase (void* data, int psize)` (void pointers)
 19. `int * p = 0;` vs `int * q = nullptr;`
@@ -228,5 +230,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2MzYwMzYwXX0=
+eyJoaXN0b3J5IjpbODAxOTk2MjhdfQ==
 -->
