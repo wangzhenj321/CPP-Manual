@@ -72,16 +72,18 @@
 22. `pointer = new type` and `pointer = new type [number_of_elements]` (dynamic memory)
 23. `foo = new (nothrow) int [5];` (`#include <new>`) (When a memory allocation fails, instead of throwing a **bad_alloc** exception or terminating the program, the pointer returned by new is a null pointer, and the program continues its execution normally.)
 24. `delete pointer;` vs `delete[] pointer;`
-25. ```c++struct type_name {
-		member_type1 member_name1;
-		member_type2 member_name2;
-		member_type3 member_name3;
-		...
-	} object_names;
+25. **struct**
+
+    ```c++
+    struct type_name {member_type1 member_name1;
+	member_type2 member_name2;
+	member_type3 member_name3;
+	...
+} object_names;
 	```
-26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
-27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
-28. ```c++
+27. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
+28. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
+29. ```c++
 	union type_name {
 		member_type1 member_name1;
 		member_type2 member_name2;
@@ -89,7 +91,7 @@
 		...
 	} object_names;
 	```
-29. ```c++
+30. ```c++
 	// structure with anonymous union
 	struct book2_t {
 		char title[50];
@@ -100,7 +102,7 @@
 		};
 	} book2;
 	```
-30. ```c++
+31. ```c++
 	// enumerated types (enum)
 	enum type_name {
 		value1,
@@ -109,7 +111,7 @@
 		...
 	} object_names;
 	```
-31. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
+32. `enum class EyeColor : char {blue, green, brown}; ` (enumerated types with enum class)
 
 ## Classes
 1. ```c++
@@ -230,5 +232,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjEzMzk5NF19
+eyJoaXN0b3J5IjpbLTQyNDc2ODk1NF19
 -->
