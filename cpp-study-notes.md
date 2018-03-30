@@ -57,11 +57,12 @@
 16. `int x;`
 
     ```c++
-    `int * p1 = &x;  // non-const pointer to non-const int`
-- `const int * p2 = &x;  // non-const pointer to const int`
--  `int * const p3 = &x;  // const pointer to non-const int`
-- `const int * const p4 = &x;  // const pointer to const int`
-- `int const * p2b = &x;  // also non-const pointer to const int`
+    int * p1 = &x;  // non-const pointer to non-const int
+    const int * p2 = &x;  // non-const pointer to const int
+    int * const p3 = &x;  // const pointer to non-const int
+    const int * const p4 = &x;  // const pointer to const int
+    int const * p2b = &x;  // also non-const pointer to const int
+    ```
 
 17. `char ** c;`
 18. `void increase (void* data, int psize)` (void pointers)
@@ -230,5 +231,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxOTk2MjhdfQ==
+eyJoaXN0b3J5IjpbLTIxNTMxMTIwNl19
 -->
