@@ -222,7 +222,7 @@ class Square {
 };
  ```
 15. `class Rectangle: public Polygon`
-16. 
+16. not
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTA3ODAwNV19
+eyJoaXN0b3J5IjpbLTEwNzM4ODY3NzJdfQ==
 -->
