@@ -41,7 +41,6 @@
 15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
 
 ## Compound data types
-
 1. `int bar [5] = { 10, 20, 30 };` (initialize arrays) (Arrays cannot be assigned values.)
 2. `int jimmy [3][5];` (multidimensional arrays)
 3. `void procedure (int arg[])`
@@ -232,12 +231,10 @@
 17. `Son (int a) : Mother (a)`
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
+
+## Other language features
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
--->
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
--->
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDM4OTQ1NDZdfQ==
+eyJoaXN0b3J5IjpbOTE3NDE3MDY4XX0=
 -->
