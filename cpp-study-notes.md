@@ -23,22 +23,20 @@
 
 ## Program structure
 1. `for ( declaration : range ) statement;`
-2. 
-`void duplicate (int& a, int& b, int& c)`
-    In C++, references are indicated with an ampersand (&) following the parameter type
-4. `string concatenate (const string& a, const string& b)`
-5. `inline string concatenate (const string& a, const string& b)`
-6. `int divide (int a, int b=2)`
-7. `void odd (int x);`
-8. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
-9. `x = sum<int>(10,20);`
-10. `template <class T, int N> T fixed_multiply (T val)`
-11. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
-12. `myNamespace::a` (scope operator ::) (namespaces can be split)
-13. `using first::x;` vs `using namespace first;`
-14. All the entities (variables, types, constants, and functions) of the standard C++ library are declared within the std namespace.
-15. global variable (static storage) (Variables with static storage (such as global variables) that are not explicitly initialized are automatically initialized to zeroes.)
-16. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
+2. `void duplicate (int& a, int& b, int& c)` (In C++, **references** are indicated with an ampersand (&) following the parameter type.)
+3. `string concatenate (const string& a, const string& b)`
+4. `inline string concatenate (const string& a, const string& b)`
+5. `int divide (int a, int b=2)`
+6. `void odd (int x);`
+7. `template <class SomeType> SomeType sum (SomeType a, SomeType b)`
+8. `x = sum<int>(10,20);`
+9. `template <class T, int N> T fixed_multiply (T val)`
+10. An inner block, because it is a different block, can re-utilize a name existing in an outer scope to refer to a different entity.
+11. `myNamespace::a` (scope operator ::) (namespaces can be split)
+12. `using first::x;` vs `using namespace first;`
+13. All the entities (variables, types, constants, and functions) of the standard C++ library are declared within the std namespace.
+14. global variable (static storage) (Variables with static storage (such as global variables) that are not explicitly initialized are automatically initialized to zeroes.)
+15. local variable (automatic storage) (Variables with automatic storage (such as local variables) that are not explicitly initialized are left uninitialized, and thus have an undetermined value.)
 
 ## Compound data types
 1. `int bar [5] = { 10, 20, 30 };` (initialize arrays) (Arrays cannot be assigned values.)
@@ -233,5 +231,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MjQ1ODY0OV19
+eyJoaXN0b3J5IjpbMTg3NTQ0NTk1Ml19
 -->
