@@ -221,7 +221,7 @@ class Square {
     Square (int a) : side(a) {}
 };
  ```
-15. 
+15. `class Rectangle: public Polygon`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTE1NjAwNThdfQ==
+eyJoaXN0b3J5IjpbLTQ0MjIwMjc1NF19
 -->
