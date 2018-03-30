@@ -222,7 +222,12 @@ class Square {
 };
  ```
 15. `class Rectangle: public Polygon`
-16. not
+16. not inherited
+- its constructors and its destructor
+- its assignment operator members (operator=)
+- its friends
+- its private members
+17. `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzM4ODY3NzJdfQ==
+eyJoaXN0b3J5IjpbLTEwNzc3NDY0MDZdfQ==
 -->
