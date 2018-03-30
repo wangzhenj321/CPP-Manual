@@ -193,7 +193,8 @@
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
  13. **friend function**
-	 ```c++
+
+	```c++
 	 class Rectangle {
 		 int width, height;
 		 public:
@@ -220,5 +221,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk2NTE0NTUzXX0=
+eyJoaXN0b3J5IjpbLTEyOTg1MDE2NjldfQ==
 -->
