@@ -216,11 +216,11 @@
 	class Square {
 	    friend class Rectangle;
 	    private:
-    int side;
-  public:
-    Square (int a) : side(a) {}
-};
- ```
+	        int side;
+	    public:
+	        Square (int a) : side(a) {}
+	    };
+	```
 15. `class Rectangle: public Polygon`
 16. not inherited
 - its constructors and its destructor
@@ -231,5 +231,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODE4MTQ3N119
+eyJoaXN0b3J5IjpbNTUyOTcwNTY5XX0=
 -->
