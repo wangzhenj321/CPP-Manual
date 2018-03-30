@@ -229,7 +229,7 @@
     };
     ```
  
- 14. **friend class**
+14. **friend class**
 
     ```c++
     class Rectangle {
@@ -238,13 +238,15 @@
             int area () {return (width * height);}
             void convert (Square a);
     };
+    
     class Square {
        friend class Rectangle;
        private:
            int side;
        public:
            Square (int a) : side(a) {}
-           };
+   };
+   ```
 
 15. `class Rectangle: public Polygon`
 16. not inherited
@@ -262,5 +264,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTA2NzEyNDZdfQ==
+eyJoaXN0b3J5IjpbLTg1MzAxNTY4XX0=
 -->
