@@ -194,11 +194,11 @@
     | Move assignment |	C& operator= (C&&); |
  13. **friend function**
 
-	```c++
-	 class Rectangle {
-		 int width, height;
-		 public:
-			 Rectangle() {}
+		```c++
+		class Rectangle {
+			int width, height;
+			public:
+				Rectangle() {}
 			 Rectangle (int x, int y) : width(x), height(y) {}
 			 int area() {return width * height;}
 			 friend Rectangle duplicate (const Rectangle&);
@@ -221,5 +221,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDQzNzQ1XX0=
+eyJoaXN0b3J5IjpbMTMxMjMwNDYxNV19
 -->
