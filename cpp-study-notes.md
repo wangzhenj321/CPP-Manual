@@ -208,8 +208,7 @@
 	class Rectangle {
 	    int width, height;
 	    public:
-	        int area ()
-	            {return (width * height);}
+	        int area () {return (width * height);}
 	        void convert (Square a);
 	};
 	
@@ -231,5 +230,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyOTcwNTY5XX0=
+eyJoaXN0b3J5IjpbLTIwODI1ODgxODFdfQ==
 -->
