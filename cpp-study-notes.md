@@ -227,7 +227,9 @@ class Square {
 - its assignment operator members (operator=)
 - its friends
 - its private members
-17. `
+17. `Son (int a) : Mother (a)`
+18. `class Rectangle: public Polygon, public Output;`
+19. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzc3NDY0MDZdfQ==
+eyJoaXN0b3J5IjpbMTQ1ODE1NTQxOF19
 -->
