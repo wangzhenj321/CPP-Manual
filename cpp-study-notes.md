@@ -194,15 +194,16 @@
     | Move assignment |	C& operator= (C&&); |
 13. **friend function**
 
-        ```c++
-        class Rectangle {
-            int width, height;
-            public:
-                Rectangle() {}
-                Rectangle (int x, int y) : width(x), height(y) {}
-                int area() {return width * height;}
-                friend Rectangle duplicate (const Rectangle&);
-        };```
+    ```c++
+    class Rectangle {
+        int width, height;
+        public:
+            Rectangle() {}
+            Rectangle (int x, int y) : width(x), height(y) {}
+            int area() {return width * height;}
+            friend Rectangle duplicate (const Rectangle&);
+    };
+    ```
  
  14. **friend class**
 
@@ -226,5 +227,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1NzI5OTMyXX0=
+eyJoaXN0b3J5IjpbMTAzNjY4MzQ2XX0=
 -->
