@@ -120,7 +120,11 @@
     } object_names;
     ```
 
-32. **enumerated types with enum class**`enum class EyeColor : char {blue, green, brown}; ` ()
+31. **enumerated types with enum class**
+
+    ```c++
+    enum class EyeColor : char {blue, green, brown}; 
+    ```
 
 ## Classes
 1. ```c++
@@ -241,5 +245,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3Mzg5MDI3XX0=
+eyJoaXN0b3J5IjpbNzgyMTk4MjM0XX0=
 -->
