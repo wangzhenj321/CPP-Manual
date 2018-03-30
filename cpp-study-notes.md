@@ -220,7 +220,6 @@
     | Move assignment |	C& operator= (C&&); |
 
 13. **friend function**
-
     ```c++
     class Rectangle {
         int width, height;
@@ -231,7 +230,6 @@
             friend Rectangle duplicate (const Rectangle&);
     };
     ```
- 
 14. **friend class**
 15. `class Rectangle: public Polygon`
 16. not inherited
@@ -249,5 +247,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTg5NTkzMl19
+eyJoaXN0b3J5IjpbMTIwNTczODk2Ml19
 -->
