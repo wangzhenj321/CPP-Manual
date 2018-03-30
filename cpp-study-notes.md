@@ -192,9 +192,9 @@
     | Copy assignment |	C& operator= (const C&); |
     | Move constructor | C::C (C&&); |
     | Move assignment |	C& operator= (C&&); |
- 13. **friend function**
+13. **friend function**
 
-		```c++
+```c++
 		class Rectangle {
 			int width, height;
 			public:
@@ -224,5 +224,5 @@
 eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjY3NjU1XX0=
+eyJoaXN0b3J5IjpbLTIyNjYzMjkyNV19
 -->
