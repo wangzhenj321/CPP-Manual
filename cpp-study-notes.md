@@ -238,8 +238,10 @@
             int area () {return (width * height);}
             void convert (Square a);
     };
-   
-   class Square {
+    ```
+
+    ```c++
+    class Square {
        friend class Rectangle;
        private:
            int side;
@@ -264,5 +266,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzMwMjM4Nl19
+eyJoaXN0b3J5IjpbMTY0NDEyNTU5M119
 -->
