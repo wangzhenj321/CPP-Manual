@@ -84,15 +84,18 @@
     ```
 
 26. `getline (cin, pmovie->title);` (arrow operator) (`(*pmovie).title`)
-2. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
-29. ```c++
-	union type_name {
-		member_type1 member_name1;
-		member_type2 member_name2;
-		member_type3 member_name3;
-		...
-	} object_names;
-	```
+27. `typedef existing_type new_type_name;` vs `using new_type_name = existing_type;` (**type aliases**)
+28. **union**
+
+    ```c++
+    union type_name {
+        member_type1 member_name1;
+        member_type2 member_name2;
+        member_type3 member_name3;
+        ...
+    } object_names;
+    ```
+
 30. ```c++
 	// structure with anonymous union
 	struct book2_t {
@@ -234,5 +237,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDg1NDI4MzVdfQ==
+eyJoaXN0b3J5IjpbLTU3NTc0ODY0NF19
 -->
