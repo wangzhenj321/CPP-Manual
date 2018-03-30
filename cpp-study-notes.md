@@ -187,15 +187,16 @@
 	const int& get() const {return x;} // const member function returning a const& 
 	```
 10. **class templates**
-	```c++
-	template <class T>
-	T mypair<T>::getmax ()
-	{
-	    T retval;
-	    retval = a>b ? a : b;
-	    return retval;
-	}
-	```
+
+```c++
+    template <class T>
+    T mypair<T>::getmax (){
+    T retval;
+    retval = a>b ? a : b;
+    return retval;
+}
+```
+
 11. **class template specialization**
 	There is no "inheritance" of members from the generic template to the specialization.
 	```c++
@@ -247,5 +248,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzc2MDUwXX0=
+eyJoaXN0b3J5IjpbLTEzNDE3MjI2NDhdfQ==
 -->
