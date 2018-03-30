@@ -204,7 +204,6 @@
 	};
 	```
  14. **friend class**
-	
 	```c++
 	class Rectangle {
 	    int width, height;
@@ -231,5 +230,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDkwMjkxMV19
+eyJoaXN0b3J5IjpbOTk5MDQzNTYzXX0=
 -->
