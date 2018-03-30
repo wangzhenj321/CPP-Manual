@@ -235,17 +235,16 @@
     class Rectangle {
         int width, height;
         public:
-            int area ()
-      {return (width * height);}
-    void convert (Square a);
-};
-
-class Square {
-  friend class Rectangle;
-  private:
-    int side;
-  public:
-    Square (int a) : side(a) {}
+            int area () {return (width * height);}
+            void convert (Square a);
+    };
+   
+   class Square {
+       friend class Rectangle;
+       private:
+           int side;
+       public:
+          Square (int a) : side(a) {}
 };
     ```
 
@@ -265,5 +264,5 @@ eyJoaXN0b3J5IjpbMTg1ODYyMzA0N119
 eyJoaXN0b3J5IjpbMTE0MzcyOTU4N119
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3NzU1MzQwXX0=
+eyJoaXN0b3J5IjpbOTgwOTUwMTQ0XX0=
 -->
