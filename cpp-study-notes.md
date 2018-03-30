@@ -205,9 +205,9 @@
 	```
 
  14. **friend class**
-    ```
-    sdfsdf
-    ```
+```
+	   sdfsdf
+```
 
 15. `class Rectangle: public Polygon`
 16. not inherited
@@ -219,5 +219,5 @@
 18. `class Rectangle: public Polygon, public Output;`
 19. **pointers to base class** and **virtual members** and **abstract base classes**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzQ0NzY1NV19
+eyJoaXN0b3J5IjpbLTUxNDk3MTI3M119
 -->
