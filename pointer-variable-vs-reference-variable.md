@@ -67,5 +67,5 @@
     const int &x = int(12); //legal C++
     int *y = &int(12); //illegal to dereference a temporary.
     ```
-
-This makes `const&` safer for use in argument lists and so forth.
+    
+    This makes `const&` safer for use in argument lists and so forth.
