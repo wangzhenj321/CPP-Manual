@@ -86,9 +86,7 @@ Actually, most use cases of inheritance in C++ should use public inheritance. Wh
 - its friends
 - its private members
 
-***Even though access to the constructors and destructor of the base class is not inherited as such, they are automatically called by the constructors and destructor of the derived class.***
-
-***Unless otherwise specified, the constructors of a derived class calls the default constructor of its base classes (i.e., the constructor taking no arguments). Calling a different constructor of a base class is possible, using the same syntax used to initialize member variables in the initialization list:***
+***Even though access to the constructors and destructor of the base class is not inherited as such, they are automatically called by the constructors and destructor of the derived class. Unless otherwise specified, the constructors of a derived class calls the default constructor of its base classes (i.e., the constructor taking no arguments). Calling a different constructor of a base class is possible, using the same syntax used to initialize member variables in the initialization list:***
 
 ```c++
 derived_constructor_name (parameters) : base_constructor_name (parameters) {...}
@@ -135,6 +133,9 @@ Notice the difference between which *Mother*'s constructor is called when a new 
 Daughter (int a)          // nothing specified: call default constructor
 Son (int a) : Mother (a)  // constructor specified: call this specific constructor
 ```
+
+> ***Remarks***
+> In the previous example, if the constructor taking no arguments of *Mother* class was removed, an error will occur.
 
 ## Multiple inheritance
 
