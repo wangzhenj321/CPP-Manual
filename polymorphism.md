@@ -1,8 +1,8 @@
 ## Pointers to base class
 
-One of the key features of class inheritance is that a pointer to a derived class is type-compatible with a pointer to its base class. *Polymorphism* is the art of taking advantage of this simple but powerful and versatile feature.
+One of the key features of class inheritance is that a pointer to a derived class is type-compatible with a pointer to its base class. ***Polymorphism*** is the art of taking advantage of this simple but powerful and versatile feature.
 
-The example about the rectangle and triangle classes can be rewritten using pointers taking this feature into account:
+The example about the *rectangle* and *triangle* classes can be rewritten using pointers taking this feature into account:
 
 ```c++
 // pointers to base class
@@ -42,7 +42,7 @@ int main () {
 }
 ```
 
-Function *main* declares two pointers to *Polygon* (named *ppoly1* and *ppoly2*). These are assigned the addresses of *rect* and *trgl*, respectively, which are objects of type *Rectangle* and Triangle. Such assignments are valid, since both *Rectangle* and *Triangle* are classes derived from *Polygon*.
+Function *main* declares two pointers to *Polygon* (named *ppoly1* and *ppoly2*). These are assigned the addresses of *rect* and *trgl*, respectively, which are objects of type *Rectangle* and *Triangle*. Such assignments are valid, since both *Rectangle* and *Triangle* are classes derived from *Polygon*.
 
 Dereferencing *ppoly1* and *ppoly2* (with *\*ppoly1* and *\*ppoly2*) is valid and allows us to access the members of their pointed objects. For example, the following two statements would be equivalent in the previous example:
 
@@ -57,7 +57,7 @@ Member *area* could have been accessed with the pointers to *Polygon* if *area* 
 
 ## Virtual members
 
-A virtual member is a member function that can be redefined in a derived class, while preserving its calling properties through references. The syntax for a function to become virtual is to precede its declaration with the *virtual* keyword:
+A virtual member is a member function that can be redefined in a derived class, while preserving its calling properties through references. The syntax for a function to become virtual is to precede its declaration with the ***virtual*** keyword:
 
 ```c++
 // virtual members
@@ -105,7 +105,7 @@ int main () {
 
 In this example, all three classes (*Polygon*, *Rectangle* and *Triangle*) have the same members: *width*, *height*, and functions *set_values* and *area*.
 
-The member function area has been declared as *virtual* in the base class because it is later redefined in each of the derived classes. Non-virtual members can also be redefined in derived classes, but non-virtual members of derived classes cannot be accessed through a reference of the base class: i.e., if *virtual* is removed from the declaration of *area* in the example above, all three calls to *area* would return zero, because in all cases, the version of the base class would have been called instead.
+The member function *area* has been declared as *virtual* in the base class because it is later redefined in each of the derived classes. ***Non-virtual members can also be redefined in derived classes, but non-virtual members of derived classes cannot be accessed through a reference of the base class:*** i.e., if *virtual* is removed from the declaration of *area* in the example above, all three calls to *area* would return zero, because in all cases, the version of the base class would have been called instead.
 
 Therefore, essentially, what the *virtual* keyword does is to allow a member of a derived class with the same name as one in the base class to be appropriately called from a pointer, and more precisely when the type of the pointer is a pointer to the base class that is pointing to an object of the derived class, as in the above example.
 
@@ -131,9 +131,9 @@ class Polygon {
 };
 ```
 
-Notice that *area* has no definition; this has been replaced by *=0*, which makes it a *pure virtual function*. Classes that contain at least one *pure virtual function* are known as *abstract base classes*.
+***Notice that *area* has no definition; this has been replaced by *=0*, which makes it a *pure virtual function*. Classes that contain at least one *pure virtual function* are known as *abstract base classes*.***
 
-Abstract base classes cannot be used to instantiate objects. Therefore, this last abstract base class version of *Polygon* could not be used to declare objects like:
+***Abstract base classes cannot be used to instantiate objects.*** Therefore, this last abstract base class version of *Polygon* could not be used to declare objects like:
 
 ```c++
 Polygon * ppoly1;
@@ -181,7 +181,7 @@ int main () {
 }
 ```
 
-In this example, objects of different but related types are referred to using a unique type of pointer (Polygon*) and the proper member function is called every time, just because they are virtual. This can be really useful in some circumstances. For example, it is even possible for a member of the abstract base class *Polygon* to use the special pointer *this* to access the proper virtual members, even though *Polygon* itself has no implementation for this function:
+In this example, objects of different but related types are referred to using a unique type of pointer (Polygon*) and the proper member function is called every time, just because they are virtual. This can be really useful in some circumstances. For example, it is even possible for a member of the abstract base class *Polygon* to use the special pointer ***this*** to access the proper virtual members, even though *Polygon* itself has no implementation for this function:
 
 ```c++
 // pure virtual members can be called
