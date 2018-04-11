@@ -23,7 +23,7 @@ Once the header is included, it checks if a unique value (in this case `HEADERFI
 
 When the code is included again, the first `ifndef` fails, resulting in a blank file.
 
-That prevents double declaration of any identifiers such as types, enums and static variables.
+***That prevents double declaration of any identifiers such as types, enums and static variables.***
 
 ## References
 
