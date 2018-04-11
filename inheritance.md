@@ -8,16 +8,16 @@ This could be represented in the world of classes with a class *Polygon* from wh
 
 The *Polygon* class would contain members that are common for both types of polygon. In our case: *width* and *height*. And *Rectangle* and *Triangle* would be its derived classes, with specific features that are different from one type of polygon to the other.
 
-**Classes that are derived from others inherit all the accessible members of the base class.** That means that if a base class includes a member *A* and we derive a class from it with another member called *B*, the derived class will contain both member *A* and member *B*.
+***Classes that are derived from others inherit all the accessible members of the base class.*** That means that if a base class includes a member *A* and we derive a class from it with another member called *B*, the derived class will contain both member *A* and member *B*.
 
-The inheritance relationship of two classes is declared in the derived class. **Derived classes definitions use the following syntax:**
+The inheritance relationship of two classes is declared in the derived class. ***Derived classes definitions use the following syntax:***
 
 ```c++
 class derived_class_name: public base_class_name
 { /*...*/ };
 ```
 
-Where *derived_class_name* is the name of the derived class and *base_class_name* is the name of the class on which it is based. The *public* access specifier may be replaced by any one of the other access specifiers (*protected* or *private*). **This access specifier limits the most accessible level for the members inherited from the base class: The members with a more accessible level are inherited with this level instead, while the members with an equal or more restrictive access level keep their restrictive level in the derived class.**
+Where *derived_class_name* is the name of the derived class and *base_class_name* is the name of the class on which it is based. The *public* access specifier may be replaced by any one of the other access specifiers (*protected* or *private*). ***This access specifier limits the most accessible level for the members inherited from the base class: The members with a more accessible level are inherited with this level instead, while the members with an equal or more restrictive access level keep their restrictive level in the derived class.***
 
 ```c++
 // derived classes
@@ -79,16 +79,16 @@ Actually, most use cases of inheritance in C++ should use public inheritance. Wh
 
 ## What is inherited from the base class?
 
-**In principle, a publicly derived class inherits access to every member of a base class except:**
+***In principle, a publicly derived class inherits access to every member of a base class except:***
 
 - its constructors and its destructor
 - its assignment operator members (operator=)
 - its friends
 - its private members
 
-**Even though access to the constructors and destructor of the base class is not inherited as such, they are automatically called by the constructors and destructor of the derived class.**
+***Even though access to the constructors and destructor of the base class is not inherited as such, they are automatically called by the constructors and destructor of the derived class.***
 
-**Unless otherwise specified, the constructors of a derived class calls the default constructor of its base classes (i.e., the constructor taking no arguments). Calling a different constructor of a base class is possible, using the same syntax used to initialize member variables in the initialization list:**
+***Unless otherwise specified, the constructors of a derived class calls the default constructor of its base classes (i.e., the constructor taking no arguments). Calling a different constructor of a base class is possible, using the same syntax used to initialize member variables in the initialization list:***
 
 ```c++
 derived_constructor_name (parameters) : base_constructor_name (parameters) {...}
@@ -138,7 +138,7 @@ Son (int a) : Mother (a)  // constructor specified: call this specific construct
 
 ## Multiple inheritance
 
-**A class may inherit from more than one class by simply specifying more base classes, separated by commas, in the list of a class's base classes (i.e., after the colon).** For example, if the program had a specific class to print on screen called *Output*, and we wanted our classes *Rectangle* and *Triangle* to also inherit its members in addition to those of *Polygon* we could write:
+***A class may inherit from more than one class by simply specifying more base classes, separated by commas, in the list of a class's base classes (i.e., after the colon).*** For example, if the program had a specific class to print on screen called *Output*, and we wanted our classes *Rectangle* and *Triangle* to also inherit its members in addition to those of *Polygon* we could write:
 
 ```c++
 class Rectangle: public Polygon, public Output;
