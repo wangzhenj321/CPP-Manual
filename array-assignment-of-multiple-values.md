@@ -40,6 +40,13 @@ array = {34,2,4,5,6};
 
 Of course, if you choose to use `std::vector` instead of raw array.
 
+**Remarks**
+
+```c++
+// not correct statement: char* p = "Other text";
+const char* p = "Other text";
+```
+
 ## References
 
 1. [array assignment of multiple values](https://stackoverflow.com/questions/5732798/c-array-assignment-of-multiple-values)
