@@ -113,6 +113,21 @@ A class that declares or inherits a virtual function is called a *polymorphic* c
 
 Note that despite of the virtuality of one of its members, *Polygon* was a regular class, of which even an object was instantiated (*poly*), with its own definition of member *area* that always returns 0.
 
+> ***Remarks***
+> 
+> ***References:*** [virtual function specifier](http://en.cppreference.com/w/cpp/language/virtual)
+> 
+> If some member function vf is declared as virtual in a class Base, and some class Derived, which is derived, directly or indirectly, from Base, has a declaration for member function with the same
+> 
+> - name
+> - parameter type list (but not the return type)
+> - cv-qualifiers
+> - ref-qualifiers
+> 
+> Then this function in the class Derived is also ***virtual*** (whether or not the keyword virtual is used in its declaration) and ***overrides*** Base::vf (whether or not the word override is used in its declaration).
+> 
+> Base::vf does not need to be visible (can be declared private, or inherited using private inheritance) to be overridden.
+
 ## Abstract base classes
 
 Abstract base classes are something very similar to the *Polygon* class in the previous example. They are classes that can only be used as base classes, and thus are allowed to have virtual member functions without definition (known as pure virtual functions). The syntax is to replace their definition by *=0* (an equal sign and a zero):
