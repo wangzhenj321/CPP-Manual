@@ -1,6 +1,6 @@
 ## Inheritance between classes
 
-**Classes in C++ can be extended, creating new classes which retain characteristics of the base class.** This process, known as inheritance, involves a *base class* and a *derived class*: The *derived class* inherits the members of the *base class*, on top of which it can add its own members.
+***Classes in C++ can be extended, creating new classes which retain characteristics of the base class.*** This process, known as inheritance, involves a *base class* and a *derived class*: The *derived class* inherits the members of the *base class*, on top of which it can add its own members.
 
 For example, let's imagine a series of classes to describe two kinds of polygons: rectangles and triangles. These two polygons have certain common properties, such as the values needed to calculate their areas: they both can be described simply with a height and a width (or base).
 
