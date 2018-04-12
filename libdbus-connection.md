@@ -124,6 +124,7 @@ The takeaway here, is to learn about D-Bus first. Once you have a firm grasp abo
 - [Using the D-Bus C API](http://www.matthew.ath.cx/misc/dbus)
 - [Compiling D-Bus Programs](https://stackoverflow.com/questions/14263390/how-to-compile-a-basic-d-bus-glib-example)
 - [How to configure DBus dependencies with CMake](https://stackoverflow.com/questions/38515316/how-to-configure-dbus-dependencies-with-cmake)
+- [How can I link correctly to QT4 libraries in CMake?](https://stackoverflow.com/questions/16123817/how-can-i-link-correctly-to-qt4-libraries-in-cmake)
 
 ## Code
 
