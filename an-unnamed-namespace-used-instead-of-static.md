@@ -56,6 +56,21 @@ namespace UNIQUE {
 For each translation unit, a uniquely generated identifier name for *UNIQUE* somehow gets synthesized by the compiler, with the effect that no other translation unit can see names from an unnamed namespace, hence making it local even though the name may have external linkage.
 Therefore, although *flag* in CCC has external linkage, its real name is *UNIQUE::flag*, but since *UNIQUE* is only known to *x.cpp*, it's effectively local to *x.cpp* and is therefore not known to any other translation unit.
 
+## scope resolution operator without a scope
+
+It means global scope. You might need to use this operator when you have conflicting functions or variables in the same scope and you need to use a global one. You might have something like:
+
+```c++
+void bar();    // this is a global function
+
+class foo {
+    void some_func() { ::bar(); }    // this function is calling the global bar() and not the class version
+    void bar();                      // this is a class member
+};
+```
+
+If you need to call the global `bar()` function from within a class member function, you should use `::bar()` to get to the global version of the function.
+
 ## References
 
 1. [Static vs global](https://stackoverflow.com/questions/2271902/static-vs-global)
