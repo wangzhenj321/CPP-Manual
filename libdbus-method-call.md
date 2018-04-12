@@ -4,7 +4,7 @@ D-Bus is an integral part of the Linux operating system and in true Linux fashio
 
 D-Bus at its essence is a message passing system that facilitates interprocess communication and generically abstracts a service's functionality. This allows a service to provide functionality and information in such a way that it can be accessed across process boundaries, language boundaries, licensing restrictions and even network boundaries!
 
-## Connect to DBus
+## Get a connection to DBus
 
 As you may have guessed, D-Bus behaves like a bus. As we all know, a bus is of no use, unless you are connected. In order to get connected, you will need to execute the following code.
 
@@ -24,7 +24,7 @@ Bango, now you're on the bus! Now you have access to every service connected to 
 
 > ***PROTIP:*** If you are an Ubuntu user, and you would like to see the D-Bus mechanism in action, then download D-Feet from the Ubuntu App Store and you can easily navigate through the services exposed via D-Bus.
 
-## Send inquiry and get reply
+## Compose a method call message and send it
 
 All D-Bus services should provide an interface called `Introspectable` with a single method called `Introspect` (if you are familiar with DCOM on Windows, then you should feel right at home). This allows you to recurse through each service made available via D-Bus. You are able to discover all methods, properties and events, by using the interfaces defined in the XML string resulting from the call to `Introspect`.
 
@@ -43,7 +43,7 @@ dbus_reply = ::dbus_connection_send_with_reply_and_block(dbus_conn, dbus_msg, DB
 
 Eureka! You've just communcated with the system via D-Bus. Take a step back and think about what you've accomplished so far. You have just queried the system! The same pattern will give to access to nearly every service on the system (i.e. bluetooth).
 
-## Parse reply
+## Parse reply message
 
 So far we have connected to the D-Bus (daemon), we have queried the D-Bus service and we have received a response. HOWEVER, we have a message that we can't quite understand. That's because it was marshalled into a binary format that is easier and more efficient to send as a message (but more difficult for humans to read).
 
@@ -115,17 +115,17 @@ The takeaway here, is to learn about D-Bus first. Once you have a firm grasp abo
 
 ## More Info
 
-- [D-Bus Tutorial](https://dbus.freedesktop.org/doc/dbus-tutorial.html)
+- [D-Bus Tutorial](https://dbus.freedesktop.org/doc/dbus-tutorial.html) :star::star::star::star::star:
 - [D-Bus Specification](https://dbus.freedesktop.org/doc/dbus-specification.html)
     - [Standard Interfaces](https://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces)
 
 ## Other Examples
 
-- [Using the D-Bus C API](http://www.matthew.ath.cx/misc/dbus)
+- [Using the D-Bus C API](http://www.matthew.ath.cx/misc/dbus) :star::star::star::star::star:
+- [DBus 入门与应用](http://www.cnblogs.com/muxue/category/434420.html) :star::star::star::star::star:
 - [Compiling D-Bus Programs](https://stackoverflow.com/questions/14263390/how-to-compile-a-basic-d-bus-glib-example)
-- [How to configure DBus dependencies with CMake](https://stackoverflow.com/questions/38515316/how-to-configure-dbus-dependencies-with-cmake)
+- [How to configure DBus dependencies with CMake](https://stackoverflow.com/questions/38515316/how-to-configure-dbus-dependencies-with-cmake) :star::star::star::star::star:
 - [How can I link correctly to QT4 libraries in CMake?](https://stackoverflow.com/questions/16123817/how-can-i-link-correctly-to-qt4-libraries-in-cmake)
-- [DBus 入门与应用](http://www.cnblogs.com/muxue/category/434420.html)
 
 ## Code
 
