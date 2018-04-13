@@ -7,6 +7,7 @@
             - [`dbus_bus_add_match()`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga4eb6401ba014da3dbe3dc4e2a8e5b3ef)
         - [DBusConnection](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html)
             - [`DBusConnection`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#ga168c25556d88c296ebc64f1d7b20f699)
+            - [`dbus_connection_send()`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#gae1cb64f4cf550949b23fd3a756b2f7d0)
             - [`dbus_connection_send_with_reply()`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#gaa215df7ab7ca6dce7be153c6b9cc80ba)
             - [`dbus_connection_send_with_reply_and_block()`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#ga8d6431f17a9e53c9446d87c2ba8409f0)
             - [`dbus_connection_flush()`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#ga10e68d9d2f41d655a4151ddeb807ff54)
