@@ -3,7 +3,7 @@
         - [Message bus APIs](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html)
             - [`dbus_bus_get()`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga77ba5250adb84620f16007e1b023cf26)
             - [`dbus_bus_get_unique_name()`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga8c10339a1e62f6a2e5752d9c2270d37b)
-            - [`dbus_bus_request_name`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga8a9024c78c4ea89b6271f19dbc7861b2)
+            - [`dbus_bus_request_name()`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga8a9024c78c4ea89b6271f19dbc7861b2)
             - [`dbus_bus_add_match()`](https://dbus.freedesktop.org/doc/api/html/group__DBusBus.html#ga4eb6401ba014da3dbe3dc4e2a8e5b3ef)
         - [DBusConnection](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html)
             - [`DBusConnection`](https://dbus.freedesktop.org/doc/api/html/group__DBusConnection.html#ga168c25556d88c296ebc64f1d7b20f699)
