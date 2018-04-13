@@ -126,6 +126,16 @@ The takeaway here, is to learn about D-Bus first. Once you have a firm grasp abo
 - [DBus 入门与应用](http://www.cnblogs.com/muxue/category/434420.html) :star::star::star::star::star:
 - [Compiling D-Bus Programs](https://stackoverflow.com/questions/14263390/how-to-compile-a-basic-d-bus-glib-example)
 - [How to configure DBus dependencies with CMake](https://stackoverflow.com/questions/38515316/how-to-configure-dbus-dependencies-with-cmake) :star::star::star::star::star:
+    ```cmake
+    # include FindDBus.cmake file in current directory
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
+    find_package(DBus QUIET REQUIRED)
+    
+    include_directories(${DBUS_INCLUDE_DIRS})
+    
+    add_executable(${name} ${src})
+    target_link_libraries(${name} ${DBUS_LIBRARIES})
+    ```
 - [How can I link correctly to QT4 libraries in CMake?](https://stackoverflow.com/questions/16123817/how-can-i-link-correctly-to-qt4-libraries-in-cmake)
 
 ## Code
