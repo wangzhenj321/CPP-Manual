@@ -121,7 +121,8 @@ The takeaway here, is to learn about D-Bus first. Once you have a firm grasp abo
 
 ## Other Examples
 
-- [Using the D-Bus C API](http://www.matthew.ath.cx/misc/dbus) :star::star::star::star::star:
+- [Using the D-Bus C API](http://www.matthew.ath.cx/misc/dbus)
+    - [dbus-example.c](http://www.matthew.ath.cx/projects.git/dbus-example.c) :star::star::star::star::star:
 - [DBus 入门与应用](http://www.cnblogs.com/muxue/category/434420.html) :star::star::star::star::star:
 - [Compiling D-Bus Programs](https://stackoverflow.com/questions/14263390/how-to-compile-a-basic-d-bus-glib-example)
 - [How to configure DBus dependencies with CMake](https://stackoverflow.com/questions/38515316/how-to-configure-dbus-dependencies-with-cmake) :star::star::star::star::star:
