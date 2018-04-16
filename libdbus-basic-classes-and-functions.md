@@ -46,5 +46,13 @@
             - [`dbus_pending_call_block()`](https://dbus.freedesktop.org/doc/api/html/group__DBusPendingCall.html#ga67b99f749a7f477c7b5d70f2acee5452)
         - [Protocol constants](https://dbus.freedesktop.org/doc/api/html/group__DBusProtocol.html)
         - [Shared constants](https://dbus.freedesktop.org/doc/api/html/group__DBusShared.html)
+            - [`DBusBusType`](https://dbus.freedesktop.org/doc/api/html/group__DBusShared.html#ga980320deb96476bee7555edcdebc3528)
+                - DBUS_BUS_SESSION
+                - DBUS_BUS_SYSTEM
+                - DBUS_BUS_STARTER
+            - [`DBusHandlerResult`](https://dbus.freedesktop.org/doc/api/html/group__DBusShared.html#ga8244b29230187624c24986c24edab1de)
+                - DBUS_HANDLER_RESULT_HANDLED
+                - DBUS_HANDLER_RESULT_NOT_YET_HANDLED
+                - DBUS_HANDLER_RESULT_NEED_MEMORY
             
             
