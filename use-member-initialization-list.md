@@ -62,6 +62,8 @@ private:
 };
 ```
 
+> ***Remarks*** For members of fundamental types, it makes no difference which of the ways above the constructor is defined, because they are not initialized by default, ***but for member objects (those whose type is a class), if they are not initialized after the colon, they are default-constructed.***
+
 ## References
 
 1. [Why should I prefer to use member initialization list?](https://stackoverflow.com/questions/926752/why-should-i-prefer-to-use-member-initialization-list)
