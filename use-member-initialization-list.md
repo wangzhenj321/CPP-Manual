@@ -6,7 +6,7 @@ Do you use member initialization lists in your constructors? If so, why? If not,
 
 ## Answer
 
-For **POD** class members, it makes no difference, it's just a matter of style. For class members which are classes, then it avoids an unnecessary call to a default constructor. Consider:
+For **POD** class members, it makes no difference, it's just a matter of style. ***For class members which are classes, then it avoids an unnecessary call to a default constructor.*** Consider:
 
 ```c++
 class A
@@ -40,7 +40,7 @@ B()
 
 This would only call `A`'s `A(int)` constructor and not its default constructor. In this example, the difference is negligible, but imagine if you will that `A`'s default constructor did more, such as allocating memory or opening files. You wouldn't want to do that unnecessarily.
 
-Furthermore, if a class doesn't have a default constructor, or you have a const member variable, you must use an initializer list:
+***Furthermore, if a class doesn't have a default constructor, or you have a const member variable, you must use an initializer list:***
 
 ```c++
 class A
