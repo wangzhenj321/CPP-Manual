@@ -26,7 +26,7 @@ This same class could also be used to create an object to store any other type, 
 mypair<double> myfloats (3.0, 2.18);
 ```
 
-The constructor is the only member function in the previous class template and it has been defined inline within the class definition itself. In case that a member function is defined outside the defintion of the class template, it shall be preceded with the template <...> prefix:
+The constructor is the only member function in the previous class template and it has been defined inline within the class definition itself. ***In case that a member function is defined outside the defintion of the class template, it shall be preceded with the template <...> prefix:***
 
 ```c++
 // class templates
@@ -68,9 +68,9 @@ Confused by so many T's? There are three T's in this declaration: The first one 
 
 ## Template specialization
 
-It is possible to define a different implementation for a template when a specific type is passed as template argument. This is called a *template specialization*.
+It is possible to define a different implementation for a template when a specific type is passed as template argument. This is called a ***template specialization***.
 
-For example, let's suppose that we have a very simple class called *mycontainer* that can store one element of any type and that has just one member function called *increase*, which increases its value. But we find that when it stores an element of type char it would be more convenient to have a completely different implementation with a function member *uppercase*, so we decide to declare a class template specialization for that type:
+For example, let's suppose that we have a very simple class called *mycontainer* that can store one element of any type and that has just one member function called `increase`, which increases its value. But we find that when it stores an element of type `char` it would be more convenient to have a completely different implementation with a function member `uppercase`, so we decide to declare a class template specialization for that type:
 
 ```c++
 // template specialization
@@ -124,9 +124,9 @@ template <class T> class mycontainer { ... };
 template <> class mycontainer <char> { ... };
 ```
 
-The first line is the generic template, and the second one is the specialization.
+**The first line is the generic template, and the second one is the specialization.***
 
-When we declare specializations for a template class, we must also define all its members, even those identical to the generic template class, because there is no "inheritance" of members from the generic template to the specialization.
+When we declare specializations for a template class, we must also define all its members, even those identical to the generic template class, because ***there is no "inheritance" of members from the generic template to the specialization.***
 
 ## References
 
