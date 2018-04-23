@@ -44,6 +44,7 @@ The C++ Standard library provides all standard C headers for compatibility reaso
 
 The C++ Standard mentions this under *Annex D (normative) Compatibility features*:
 
+![](img/xxxxh-vs-cxxxx/fig1.png?raw=true)
 
 §2 mentions the important distinguishing point. This rule applied to the examples above means:
 
