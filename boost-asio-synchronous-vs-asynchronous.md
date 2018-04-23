@@ -1,3 +1,5 @@
+***References:*** https://www.boost.org/doc/libs/1_58_0/doc/html/boost_asio/overview/core/basics.html
+
 Boost.Asio may be used to perform both synchronous and asynchronous operations on I/O objects such as sockets. Before using Boost.Asio it may be useful to get a conceptual picture of the various parts of Boost.Asio, your program, and how they work together.
 
 As an introductory example, let's consider what happens when you perform a connect operation on a socket. We shall start by examining synchronous operations.
