@@ -18,7 +18,7 @@ sudo apt-get autoremove package
 
 ***References:*** https://stackoverflow.com/questions/12578499/how-to-install-boost-on-ubuntu
 
-> ***Remarks*** The installation process will take long time.
+> ***Remarks*** The installation process will take a long time.
 
 Get the version of Boost that you require. This is for 1.55 but feel free to change or manually download yourself:
 
