@@ -129,6 +129,6 @@ Here's what you can and cannot do.
     
 When it comes to templates, there is no absolute rule: whether you can use an incomplete type as a template parameter is dependent on the way the type is used in the template.
 
-For instance, `std::vector<T>` requires its parameter to be a complete type, while `boost::container::vector<T>` does not. Sometimes, a complete type is required only if you use certain member functions; this is the case for std::unique_ptr<T>, for example.
+For instance, `std::vector<T>` requires its parameter to be a complete type, while `boost::container::vector<T>` does not. Sometimes, a complete type is required only if you use certain member functions; [this is the case for std::unique_ptr\<T\>](https://stackoverflow.com/questions/6012157/is-stdunique-ptrt-required-to-know-the-full-definition-of-t), for example.
 
 A well-documented template should indicate in its documentation all the requirements of its parameters, including whether they need to be complete types or not.
