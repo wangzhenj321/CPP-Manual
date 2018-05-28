@@ -58,6 +58,8 @@ typedef struct { ... } Foo;
 
 declares an anonymous structure and creates a `typedef` for it. Thus, with this construct, it doesn't have a name in the tag namespace, only a name in the typedef namespace. This means it also cannot be forward-declared. If you want to make a forward declaration, you have to give it a name in the tag namespace.
 
+---
+
 In C++, all `struct`/`union`/`enum`/`class` declarations act like they are implicitly `typedef`'ed, as long as the name is not hidden by another declaration with the same name. See Michael Burr's answer for the full details.
 
 ## References
