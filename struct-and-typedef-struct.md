@@ -62,6 +62,8 @@ declares an anonymous structure and creates a `typedef` for it. Thus, with this 
 
 In C++, all `struct`/`union`/`enum`/`class` declarations act like they are implicitly `typedef`'ed, as long as the name is not hidden by another declaration with the same name. See Michael Burr's answer for the full details.
 
+---
+
 ## References
 
 1. [Difference between 'struct' and 'typedef struct' in C++?](https://stackoverflow.com/questions/612328/difference-between-struct-and-typedef-struct-in-c)
