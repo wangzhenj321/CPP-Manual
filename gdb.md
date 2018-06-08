@@ -278,13 +278,3 @@ These windows are not all visible at the same time. The command window is always
 - `refresh` Refresh the screen. This is similar to typing C-L.
 
 - `update` Update the source window and the current execution point.
-
-### 4.9 分割窗口
-
-- `layout` 用于分割窗口，可以一边查看代码，一边测试
-- `layout src` 显示源代码窗口
-- `layout asm` 显示反汇编窗口
-- `layout regs` 显示源代码/反汇编和CPU寄存器窗口
-- `layout split` 显示源代码和反汇编窗口
-- `Ctrl + l` 刷新窗口
-- `Ctrl + x + a` Enter or leave the TUI mode
