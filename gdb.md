@@ -217,10 +217,21 @@ The TUI mode is enabled by default when you invoke GDB as ‘gdb -tui’. You ca
 
 In TUI mode, GDB can display several text windows:
 
-- *command* This window is the GDB command window with the GDB prompt and the GDB output. The GDB input is still managed using readline.
-- *source* The source window shows the source file of the program. The current line and active breakpoints are displayed in this window.
-- *assembly* The assembly window shows the disassembly output of the program.
-- *register* This window shows the processor registers. Registers are highlighted when their values change.
+- *command*
+
+    This window is the GDB command window with the GDB prompt and the GDB output. The GDB input is still managed using readline.
+
+- *source*
+
+    The source window shows the source file of the program. The current line and active breakpoints are displayed in this window.
+
+- *assembly*
+
+    The assembly window shows the disassembly output of the program.
+
+- *register*
+
+    This window shows the processor registers. Registers are highlighted when their values change.
 
 The source and assembly windows show the current program position by highlighting the current line and marking it with a ‘>’ marker. Breakpoints are indicated with two markers. The first marker indicates the breakpoint type:
 
