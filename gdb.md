@@ -2,6 +2,7 @@
 
 1. https://blog.csdn.net/bigheadyushan/article/details/77828949
 2. http://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/gdb.html
+3. https://sourceware.org/gdb/onlinedocs/gdb/TUI.html
 
 ## 1. 简介
 
@@ -205,3 +206,74 @@ bt n
 backtrace -n
 bt -n
 ```
+
+## 5. GDB Text User Interface
+
+The GDB Text User Interface (TUI) is a terminal interface which uses the curses library to show the source file, the assembly output, the program registers and GDB commands in separate text windows. The TUI mode is supported only on platforms where a suitable version of the curses library is available.
+
+The TUI mode is enabled by default when you invoke GDB as ‘gdb -tui’. You can also switch in and out of TUI mode while GDB runs by using various TUI commands and key bindings, such as tui enable or C-x C-a.
+
+### 5.1 TUI Overview
+
+In TUI mode, GDB can display several text windows:
+
+- *command* This window is the GDB command window with the GDB prompt and the GDB output. The GDB input is still managed using readline.
+- *source* The source window shows the source file of the program. The current line and active breakpoints are displayed in this window.
+- *assembly* The assembly window shows the disassembly output of the program.
+- *register* This window shows the processor registers. Registers are highlighted when their values change.
+
+The source and assembly windows show the current program position by highlighting the current line and marking it with a ‘>’ marker. Breakpoints are indicated with two markers. The first marker indicates the breakpoint type:
+
+- *B* Breakpoint which was hit at least once.
+- *b* Breakpoint which was never hit.
+
+The second marker indicates whether the breakpoint is enabled or not:
+
+- *+* Breakpoint is enabled.
+- *-* Breakpoint is disabled.
+
+The source, assembly and register windows are updated when the current thread changes, when the frame changes, or when the program counter changes.
+
+These windows are not all visible at the same time. The command window is always visible. The others can be arranged in several layouts:
+
+- source only,
+- assembly only,
+- source and assembly,
+- source and registers, or
+- assembly and registers.
+
+### 5.2 TUI Key Bindings
+
+`Ctrl + x + a` Enter or leave the TUI mode
+
+### 5.3 TUI-specific Commands
+
+- `layout name` Changes which TUI windows are displayed. In each layout the command window is always displayed, the name parameter controls which additional windows are displayed, and can be any of the following:
+    - `next`  Display the next layout.
+    - `prev`  Display the previous layout.
+    - `src`   Display the source and command windows.
+    - `asm`   Display the assembly and command windows.
+    - `split` Display the source, assembly, and command windows.
+    - `regs`  When in src layout display the register, source, and command windows. When in asm or split layout display the register, assembler, and command windows.
+
+- `focus name` Changes which TUI window is currently active for scrolling. The name parameter can be any of the following:
+    - `next` Make the next window active for scrolling.
+    - `prev` Make the previous window active for scrolling.
+    - `src`  Make the source window active for scrolling.
+    - `asm`  Make the assembly window active for scrolling.
+    - `regs` Make the register window active for scrolling.
+    - `cmd`  Make the command window active for scrolling.
+
+- `refresh` Refresh the screen. This is similar to typing C-L.
+
+- `update` Update the source window and the current execution point.
+
+### 4.9 分割窗口
+
+- `layout` 用于分割窗口，可以一边查看代码，一边测试
+- `layout src` 显示源代码窗口
+- `layout asm` 显示反汇编窗口
+- `layout regs` 显示源代码/反汇编和CPU寄存器窗口
+- `layout split` 显示源代码和反汇编窗口
+- `Ctrl + l` 刷新窗口
+- `Ctrl + x + a` Enter or leave the TUI mode
