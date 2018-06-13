@@ -17,6 +17,18 @@ int main ()
 
 `j` has **external linkage** so you can use `j` to refer to this object if you declare it extern in another translation unit.
 
+---
+
+***References:*** https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#1358796
+
+When you write an implementation file (`.cpp`, `.cxx`, etc) your compiler generates a **translation unit**. This is the object file from your implementation file plus all the headers you `#include`d in it.
+
+*Internal linkage* refers to everything only **in scope of a translation unit.**
+
+*External linkage* refers to things that exist beyond a particular translation unit. In other words, **accessible through the whole program**, which is the combination of all translation units (or object files).
+
+---
+
 ## Why is an unnamed namespace used instead of static?
 
 In C++, some uses of the `static` keyword have been deprecated. In particular, an **unnamed namespace** should be favored over some previous uses of "file scope static's". In fact in some cases an unnamed namespace must be used in order to obtain a similar effect. That is to say, this code:
