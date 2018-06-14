@@ -31,7 +31,7 @@ systemctl stop mosquitto.service
 4. `cd mosquitto-1.5/`
 5. `sudo make install`
 6. `ldconfig`
-7. `cd examples/temperature_conversion/`
+7. `cd examples/temperature_conversion/` to study an example
 8. `make`
 9. open four terminals
     - terminal 1 (start mosquitto.service): `mosquitto`
@@ -43,23 +43,23 @@ systemctl stop mosquitto.service
 
 ## mosquitto_sub & mosquitto_pub
 
-*Topics* are labels that you publish messages to and subscribe to. They are arranged as a hierarchy, so you could have `sensors/outside/temp` and `sensors/outside/humidity`, for example. How you arrange topics is up to you and your needs. Throughout this tutorial we will use a simple test topic to test our configuration changes.
+*Topics* are labels that you publish messages to and subscribe to. They are arranged as a hierarchy, so you could have `sensors/outside/temp` and `sensors/outside/humidity`, for example.
 
-Log in to your server a second time, so you have two terminals side-by-side. In the new terminal, use `mosquitto_sub` to subscribe to the test topic:
+Use `mosquitto_sub` to subscribe to the test topic:
 
 ```
 mosquitto_sub -h localhost -t test
 ```
 
-`-h` is used to specify the hostname of the MQTT server, and `-t` is the topic name. You'll see no output after hitting ENTER because `mosquitto_sub` is waiting for messages to arrive. Switch back to your other terminal and publish a message:
+`-h` is used to specify the hostname of the MQTT server, and `-t` is the topic name. You'll see no output after hitting ENTER because `mosquitto_sub` is waiting for messages to arrive. Open another new terminal and publish a message:
 
 ```
 mosquitto_pub -h localhost -t test -m "hello world"
 ```
 
-The options for `mosquitto_pub` are the same as `mosquitto_sub`, though this time we use the additional `-m` option to specify our message. Hit ENTER, and you should see hello world pop up in the other terminal. You've sent your first MQTT message!
+The options for `mosquitto_pub` are the same as `mosquitto_sub`, though this time we use the additional `-m` option to specify our message. Hit ENTER, and you should see hello world pop up in the previous terminal. You've sent your first MQTT message!
 
-Enter CTRL+C in the second terminal to exit out of `mosquitto_sub`.
+Enter CTRL+C to exit out of `mosquitto_sub`.
 
 
 ## References
@@ -73,4 +73,3 @@ Enter CTRL+C in the second terminal to exit out of `mosquitto_sub`.
 4. [Mosquitto简要教程（安装/使用/测试）](https://blog.csdn.net/shagoo/article/details/7910598)
 
 5. https://www.eclipse.org/mosquitto/man/libmosquitto-3.php
-
