@@ -2,14 +2,14 @@
 
 MQTT is a machine-to-machine messaging protocol, designed to provide lightweight publish/subscribe communication to "Internet of Things" devices. It is commonly used for geo-tracking fleets of vehicles, home automation, environmental sensor networks, and utility-scale data collection.
 
-Mosquitto is a popular MQTT server (or broker, in MQTT parlance) that has great community support and is easy to install and configure.
+Mosquitto is a popular MQTT server (or broker) that has great community support and is easy to install and configure.
 
 
 ## Installation
 
 ### Binary Installation
 
-Ubuntu 16.04 has a fairly recent version of Mosquitto in its default software repository. Log in with your non-root user and install Mosquitto with `apt`.
+Log in with your non-root user and install Mosquitto with `apt`. However, if mosquitto is not found, use `sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa` to add the Mosquitto APT repository firstly.
 
 ```
 sudo apt install mosquitto mosquitto-clients
@@ -40,6 +40,7 @@ systemctl stop mosquitto.service
     - terminal 3 (run mosquitto_pub): `mosquitto_pub -h localhost -t temperature/celsius -m 100`
 
 ![](img/mosquitto/fig1.png?raw=true)
+
 
 ## mosquitto_sub & mosquitto_pub
 
