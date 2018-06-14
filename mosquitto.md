@@ -1,13 +1,13 @@
-## Introduction
+## 1 Introduction
 
 MQTT is a machine-to-machine messaging protocol, designed to provide lightweight publish/subscribe communication to "Internet of Things" devices. It is commonly used for geo-tracking fleets of vehicles, home automation, environmental sensor networks, and utility-scale data collection.
 
 Mosquitto is a popular MQTT server (or broker, in MQTT parlance) that has great community support and is easy to install and configure.
 
 
-## Installation
+## 2 Installation
 
-### Binary Installation
+### 2.1 Binary Installation
 
 Ubuntu 16.04 has a fairly recent version of Mosquitto in its default software repository. Log in with your non-root user and install Mosquitto with `apt`.
 
@@ -23,7 +23,7 @@ systemctl stop mosquitto.service
 ...
 ```
 
-### Source Installation (recommend)
+### 2.2 Source Installation (recommend)
 
 1. `cd ~/Downloads/`
 2. `wget http://mosquitto.org/files/source/mosquitto-1.5.tar.gz`
@@ -36,10 +36,12 @@ systemctl stop mosquitto.service
 9. open four terminals
     - terminal 1 (start mosquitto.service): `mosquitto`
     - terminal 2 (run mqtt_temerature_conversion): `./mqtt_temerature_conversion`
-    - terminal 4 (run mosquitto_sub): ``
-    - terminal 3 (run mosquitto_pub): ``
+    - terminal 4 (run mosquitto_sub): `mosquitto_sub -h localhost -t temperature/farenheit`
+    - terminal 3 (run mosquitto_pub): `mosquitto_pub -h localhost -t temperature/celsius -m 100`
 
-## mosquitto_sub & mosquitto_pub
+![](img/mosquitto/fig1.png?raw=true)
+
+## 3 mosquitto_sub & mosquitto_pub
 
 *Topics* are labels that you publish messages to and subscribe to. They are arranged as a hierarchy, so you could have `sensors/outside/temp` and `sensors/outside/humidity`, for example. How you arrange topics is up to you and your needs. Throughout this tutorial we will use a simple test topic to test our configuration changes.
 
@@ -60,7 +62,7 @@ The options for `mosquitto_pub` are the same as `mosquitto_sub`, though this tim
 Enter CTRL+C in the second terminal to exit out of `mosquitto_sub`.
 
 
-## References
+## 4 References
 
 1. https://mosquitto.org/download/
 
