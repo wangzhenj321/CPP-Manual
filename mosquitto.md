@@ -15,7 +15,7 @@ Log in with your non-root user and install Mosquitto with `apt`. However, if mos
 sudo apt install mosquitto mosquitto-clients
 ```
 
-**By default, Ubuntu will start the Mosquitto service after install.** In addition, the mosquitto.service can be manipulated with the following commands after binary installation but not with source installation:
+**By default, Ubuntu will automatically start the Mosquitto service after install.** In addition, the mosquitto.service can be manipulated with the following commands after binary installation but not with source installation:
 
 ```
 systemctl start mosquitto.service
