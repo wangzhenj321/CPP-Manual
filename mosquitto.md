@@ -71,3 +71,6 @@ Enter CTRL+C in the second terminal to exit out of `mosquitto_sub`.
 3. [How to Install and Secure the Mosquitto MQTT Messaging Broker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04)
 
 4. [Mosquitto简要教程（安装/使用/测试）](https://blog.csdn.net/shagoo/article/details/7910598)
+
+5. https://www.eclipse.org/mosquitto/man/libmosquitto-3.php
+
