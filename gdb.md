@@ -84,7 +84,6 @@ g++ -g hello.cpp -o hello
 - `step` 单步跟踪，函数调进入被调用函数体内，可简写为s
     - `step count` Continue running as in `step`, but do so *count* times. If a breakpoint is reached, or a signal not related to stepping occurs before count steps, stepping stops right away.
 - `finish` 退出函数
-- `until` 在一个循环体内单步跟踪时，这个命令可以运行程序直到退出循环体,可简写为u。
 - `continue` 继续运行程序，可简写为c
 - `stepi`/`si`, `nexti`/`ni` 单步跟踪一条机器指令,一条程序代码有可能由数条机器指令完成，stepi和nexti可以单步执行机器指令。
 - `info program` 来查看程序的是否在运行，进程号，被暂停的原因。
