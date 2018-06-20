@@ -80,9 +80,9 @@ g++ -g hello.cpp -o hello
 
 - `run` 运行程序，可简写为r
 - `next` 单步跟踪，函数调用当作一条简单语句执行，可简写为n
-- `next count` An argument *count* is a repeat count, as for `step`.
+    - `next count` An argument *count* is a repeat count, as for `step`.
 - `step` 单步跟踪，函数调进入被调用函数体内，可简写为s
-- `step count` Continue running as in `step`, but do so *count* times. If a breakpoint is reached, or a signal not related to stepping occurs before count steps, stepping stops right away.
+    - `step count` Continue running as in `step`, but do so *count* times. If a breakpoint is reached, or a signal not related to stepping occurs before count steps, stepping stops right away.
 - `finish` 退出函数
 - `until` 在一个循环体内单步跟踪时，这个命令可以运行程序直到退出循环体,可简写为u。
 - `continue` 继续运行程序，可简写为c
