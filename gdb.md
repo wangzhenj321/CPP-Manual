@@ -76,6 +76,15 @@ g++ -g hello.cpp -o hello
 - `enable [breakpoints] once range…` enable所指定的停止点一次，当程序停止后，该停止点马上被GDB自动disable。
 - `enable [breakpoints] delete range…` enable所指定的停止点一次，当程序停止后，该停止点马上被GDB自动删除。
 
+#### 4.3.3 条件断点
+
+一般来说，为断点设置一个条件，我们使用`if`关键词，后面跟其断点条件。并且，条件设置好后，我们可以用`condition`命令来修改断点的条件，`condition`与`break if`类似，只是`condition`只能用在已存在的断点上。
+
+- 设置一个条件断点: `b test.c:8 if intValue == 5`
+- 修改断点号为bnum的停止条件为expression: `condition bnum expression` 
+- 清除断点号为bnum的停止条件: `condition bnum` 
+- 忽略断点号为bnum的停止条件count次: `ignore bnum count`
+
 ### 4.4 调试代码
 
 - `run` 运行程序，可简写为`r`
@@ -90,7 +99,7 @@ g++ -g hello.cpp -o hello
 
 ### 4.5 查看运行时数据
 
-- `print` 打印变量、字符串、表达式等的值，可简写为p。print接受一个表达式，GDB会根据当前的程序运行的数据来计算这个表达式，表达式可以是当前程序运行中的const常量、变量、函数等内容。但是GDB不能使用程序中定义的宏。**当调用外部函数时，目前认为这个函数默认是C语言的函数，注意C语言函数和C++函数的区别。**
+- `print` 打印变量、字符串、表达式等的值，可简写为p。print接受一个表达式，GDB会根据当前的程序运行的数据来计算这个表达式，表达式可以是当前程序运行中的const常量、变量、函数等内容。但是GDB不能使用程序中定义的宏。***当调用外部函数时，目前认为这个函数默认是C语言的函数，注意C语言函数和C++函数的区别。***
 - `p count` 打印count的值
 - `p cou1+cou2+cou3` 打印表达式值
 - `whatis var` 显示某个变量的类型
