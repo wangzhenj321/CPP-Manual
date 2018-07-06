@@ -1,28 +1,12 @@
+## Part 1 virtual function specifier
+
+***References:*** https://en.cppreference.com/w/cpp/language/virtual
+
+## Part 2 virtual base class
+
 ***References:*** https://stackoverflow.com/questions/21558/in-c-what-is-a-virtual-base-class
 
-## Question
-
-I want to know what a "*virtual base class*" is and what it means.
-
-Let me show an example:
-
-```c++
-class Foo
-{
-public:
-    void DoSomething() { /* ... */ }
-};
-
-class Bar : public virtual Foo
-{
-public:
-    void DoSpecific() { /* ... */ }
-};
-```
-
-## Answer
-
-Virtual base classes, used in virtual inheritance, is a way of preventing multiple "instances" of a given class appearing in an inheritance hierarchy when using multiple inheritance.
+**Virtual base classes, used in virtual inheritance, is a way of preventing multiple "instances" of a given class appearing in an inheritance hierarchy when using multiple inheritance.**
 
 Consider the following scenario:
 
