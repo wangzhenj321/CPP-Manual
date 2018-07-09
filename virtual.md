@@ -2,6 +2,12 @@
 
 ***References:*** https://en.cppreference.com/w/cpp/language/virtual
 
+The virtual specifier specifies that a non-static member function is virtual and supports dynamic dispatch. It may only appear in the decl-specifier-seq of the initial declaration of a non-static member function (i.e., when it is declared in the class definition).
+
+1. Then this function in the class Derived is also virtual (whether or not the keyword virtual is used in its declaration) and overrides Base::vf (whether or not the word override is used in its declaration).
+
+2. Base::vf does not need to be visible (can be declared private, or inherited using private inheritance) to be overridden.
+
 ## Part 2 virtual base class
 
 ***References:*** https://stackoverflow.com/questions/21558/in-c-what-is-a-virtual-base-class
