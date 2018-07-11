@@ -6,9 +6,8 @@ If the initialization throws an exception, the variable is not considered to be 
 
 If the initialization recursively enters the block in which the variable is being initialized, the behavior is undefined.
 
-If multiple threads attempt to initialize the same static local variable concurrently, the initialization occurs exactly once (similar behavior can be obtained for arbitrary functions with std::call_once).
+If multiple threads attempt to initialize the same static local variable concurrently, the initialization occurs exactly once (similar behavior can be obtained for arbitrary functions with `std::call_once`). Note: usual implementations of this feature use variants of the double-checked locking pattern, which reduces runtime overhead for already-initialized local statics to a single non-atomic boolean comparison.
 
-Note: usual implementations of this feature use variants of the double-checked locking pattern, which reduces runtime overhead for already-initialized local statics to a single non-atomic boolean comparison.	(since C++11)
 The destructor for a block-scope static variable is called at program exit, but only if the initialization took place successfully.
 
 Function-local static objects in all definitions of the same inline function (which may be implicitly inline) all refer to the same object defined in one translation unit.
