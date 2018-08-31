@@ -48,7 +48,9 @@ Which one is better and why?
 
 ## Answer
 
-If a class member is always initialized with the same initial value, then you should make the initializer inline, so as to avoid duplication. If the initial value depends on the constructor, then put it in the constructor initializer list. (And never use assignment in the way you did.)
+1. If a class member is always initialized with the same initial value, then you should make the **initializer inline**(= **class member initializer**), so as to avoid duplication.
+
+2. If the initial value depends on the constructor, then put it in the **constructor initializer list**(= **member initialization list**). (And never use assignment in the way you did.)
 
 Example:
 
