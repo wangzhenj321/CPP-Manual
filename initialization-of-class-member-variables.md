@@ -6,6 +6,8 @@
 
 [Part 3: new C++11 initialization forms](#part-3-new-c11-initialization-forms)
 
+[Part 4: class member variables without initialization](#part-4-class-member-variables-without-initialization)
+
 
 # Part 1: default member values best practice
 
@@ -290,3 +292,7 @@ struct Problematic {
 ```
 
 A default constructed object of type `Problematic` is, in fact, problematic, because neither its member `u` nor the members of `t` will be initialized with any meaningful value. Only `vi` has a nontrivial default constructor and therefore will be initialized correctly to represent an empty vector.
+
+## References
+
+1. [Modern C++ Features – Default Initializers for Member Variables](https://arne-mertz.de/2015/08/new-c-features-default-initializers-for-member-variables/)
