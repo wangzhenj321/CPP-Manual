@@ -11,7 +11,7 @@
 
 ## auto
 
-In C++11, if the compiler can infer the type of a variable at the point of declaration, instead of putting in the variable type, you can just write auto:
+**In C++11, if the compiler can infer the type of a variable at the point of declaration, instead of putting in the variable type, you can just write `auto`**:
 
 ```c++
 int x = 4;
