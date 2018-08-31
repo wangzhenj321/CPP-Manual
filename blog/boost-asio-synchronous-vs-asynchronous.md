@@ -18,7 +18,7 @@ boost::asio::ip::tcp::socket socket(io_service);
 
 ## Synchronous
 
-![](img/boost-asio-synchronous-vs-asynchronous/fig1.png?raw=true)
+![](../img/boost-asio-synchronous-vs-asynchronous/fig1.png?raw=true)
 
 When a synchronous connect operation is performed, the following sequence of events occurs:
 
@@ -44,7 +44,7 @@ When a synchronous connect operation is performed, the following sequence of eve
 
 ## Asynchronous
 
-![](img/boost-asio-synchronous-vs-asynchronous/fig2.png?raw=true)
+![](../img/boost-asio-synchronous-vs-asynchronous/fig2.png?raw=true)
 
 When an asynchronous operation is used, a different sequence of events occurs.
 
@@ -64,7 +64,7 @@ When an asynchronous operation is used, a different sequence of events occurs.
 
 Time passes. (In the synchronous case this wait would have been contained entirely within the duration of the connect operation.)
 
-![](img/boost-asio-synchronous-vs-asynchronous/fig3.png?raw=true)
+![](../img/boost-asio-synchronous-vs-asynchronous/fig3.png?raw=true)
 
 4. The ***operating system*** indicates that the connect operation has completed by placing the result on a queue, ready to be picked up by the ***io_service***.
 

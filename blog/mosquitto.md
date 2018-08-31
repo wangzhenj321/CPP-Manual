@@ -39,7 +39,7 @@ systemctl stop mosquitto.service
     - terminal 4 (run mosquitto_sub): `mosquitto_sub -h localhost -t temperature/farenheit`
     - terminal 3 (run mosquitto_pub): `mosquitto_pub -h localhost -t temperature/celsius -m 100`
 
-![](img/mosquitto/fig1.png?raw=true)
+![](../img/mosquitto/fig1.png?raw=true)
 
 
 ## mosquitto_sub & mosquitto_pub
