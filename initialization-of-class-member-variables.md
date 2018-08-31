@@ -265,3 +265,28 @@ C c2(5); //c.x = 5
 ## References
 
 1. [Get to Know the New C++11 Initialization Forms](http://www.informit.com/articles/article.aspx?p=1852519)
+
+
+# Part 4: class member variables without initialization
+
+## Avoiding uninitialized members
+
+***If class members are neither mentioned in a constructor’s member initializer list nor have a *brace-or-equal-initializer*, then they get default-initialized. That means, that for class types the default constructor is called, but for any other types like enums or built in types like int, double, pointers, no initialization happens at all. No initialization means your member variables possibly contain garbage values.***
+
+```c++
+struct Trivial { 
+  int k; 
+private: 
+  int l; 
+};
+
+struct Problematic {
+ vector<int> vi;
+ int u;
+ Trivial t;
+
+ Problematic() = default;
+};
+```
+
+A default constructed object of type `Problematic` is, in fact, problematic, because neither its member `u` nor the members of `t` will be initialized with any meaningful value. Only `vi` has a nontrivial default constructor and therefore will be initialized correctly to represent an empty vector.
