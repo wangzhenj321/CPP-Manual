@@ -23,7 +23,7 @@ can now be replaced with
 auto x = 4;
 ```
 
-This, of course, is not the intended use of auto at all! It really shines when working with ***templates*** and ***iterators***:
+This, of course, is not the intended use of auto at all! It really shines when working with **templates** and **iterators**:
 
 ```c++
 vector<int> vec;
