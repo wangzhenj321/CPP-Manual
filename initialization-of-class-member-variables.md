@@ -2,7 +2,7 @@
 
 [Part 1: default member values best practice](#part-1-default-member-values-best-practice)
 
-[Part 2: use member initialization list](#)
+[Part 2: use member initialization list](#part-2-use-member-initialization-list)
 
 [Part 3: new C++11 initialization forms](#)
 
