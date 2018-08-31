@@ -185,7 +185,7 @@ int& foo();
 auto bar = foo(); // int& or int?
 ```
 
-The short answer is in C++11, auto defaults to being by-value for references, so in the above code bar is an int. However, you can add the & as a modifier to force it to be a reference:
+The short answer is in C++11, **auto defaults to being by-value for references**, so in the above code bar is an int. However, you can add the & as a modifier to force it to be a reference:
 
 ```c++
 int& foo();
@@ -194,7 +194,7 @@ auto bar = foo(); // int
 auto& baz = foo(); // int&
 ```
 
-On the other hand, if you have a pointer auto will automatically pick up pointerness:
+On the other hand, **if you have a pointer auto will automatically pick up pointerness**:
 
 ```c++
 int* foo();
