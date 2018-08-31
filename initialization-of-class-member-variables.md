@@ -1,6 +1,6 @@
 #### Table of Contents
 
-[Part 1: default member values best practice](#)
+[Part 1: default member values best practice](#part-1-default-member-values-best-practice)
 
 [Part 2: use member initialization list](#)
 
