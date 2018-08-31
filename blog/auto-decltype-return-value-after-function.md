@@ -52,15 +52,14 @@ But auto immediately reduces this ugliness to nothing because you no longer need
 
 ```c++
 template <typename Builder>
-void
-makeAndProcessObject (const Builder& builder)
+void makeAndProcessObject (const Builder& builder)
 {
     auto val = builder.makeObject();
     // do stuff with val
 }
 ```
 
-Now you only need a single template parameter, and that parameter is easily inferred when calling the function:
+Now you only need a single template parameter, and that parameter is easily inferred when calling the function ([Template argument deduction](https://en.cppreference.com/w/cpp/language/template_argument_deduction)):
 
 ```c++
 MyObjBuilder builder;
