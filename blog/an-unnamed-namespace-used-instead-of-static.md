@@ -35,9 +35,9 @@ int main ()
 
 When you write an implementation file (`.cpp`, `.cxx`, etc) your compiler generates a **translation unit**. This is the object file from your implementation file plus all the headers you `#include`d in it.
 
-***Internal linkage*** refers to everything only ***in scope of a translation unit***.
+- ***Internal linkage*** refers to everything only ***in scope of a translation unit***.
 
-***External linkage*** refers to things that exist beyond a particular translation unit. In other words, ***accessible through the whole program***, which is the combination of all translation units (or object files).
+- ***External linkage*** refers to things that exist beyond a particular translation unit. In other words, ***accessible through the whole program***, which is the combination of all translation units (or object files).
 
 You can explicitly control the linkage of a symbol by using the `extern` and `static` keywords. If the linkage isn't specified then the default linkage is `extern` for non-const symbols and `static` (internal) for const symbols.
 
