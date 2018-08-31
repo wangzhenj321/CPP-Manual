@@ -164,8 +164,7 @@ This would give us the type that is returned from makeObject, allowing us to spe
 
 ```c++
 template <typename Builder>
-auto
-makeAndProcessObject (const Builder& builder) -> decltype( builder.makeObject() )
+auto makeAndProcessObject (const Builder& builder) -> decltype( builder.makeObject() )
 {
     auto val = builder.makeObject();
     // do stuff with val
