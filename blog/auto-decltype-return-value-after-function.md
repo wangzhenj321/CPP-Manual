@@ -34,8 +34,7 @@ There are other times where auto comes in handy, too. For example, let's say tha
 
 ```c++
 template <typename BuiltType, typename Builder>
-void
-makeAndProcessObject (const Builder& builder)
+void makeAndProcessObject (const Builder& builder)
 {
     BuiltType val = builder.makeObject();
     // do stuff with val
