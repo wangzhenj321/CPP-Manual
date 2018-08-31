@@ -1,3 +1,16 @@
+**Table of Contents**
+
+[static vs global](#static-vs-global)
+
+[internal linkage vs external linkage](#internal-linkage-vs-external-linkage)
+
+[an unnamed namespace used instead of static](#an-unnamed-namespace-used-instead-of-static)
+
+[scope resolution operator without a scope](#scope-resolution-operator-without-a-scope)
+
+[References](#References)
+
+
 ## static vs global
 
 ```c++
@@ -17,7 +30,8 @@ int main ()
 
 `j` has **external linkage** so you can use `j` to refer to this object if you declare it extern in another translation unit.
 
----
+
+## internal linkage vs external linkage
 
 ***References:*** https://stackoverflow.com/questions/1358400/what-is-external-linkage-and-internal-linkage#1358796
 
@@ -27,9 +41,8 @@ When you write an implementation file (`.cpp`, `.cxx`, etc) your compiler genera
 
 *External linkage* refers to things that exist beyond a particular translation unit. In other words, **accessible through the whole program**, which is the combination of all translation units (or object files).
 
----
 
-## Why is an unnamed namespace used instead of static?
+## an unnamed namespace used instead of static
 
 In C++, some uses of the `static` keyword have been deprecated. In particular, an **unnamed namespace** should be favored over some previous uses of "file scope static's". In fact in some cases an unnamed namespace must be used in order to obtain a similar effect. That is to say, this code:
 
@@ -68,6 +81,7 @@ namespace UNIQUE {
 For each translation unit, a uniquely generated identifier name for *UNIQUE* somehow gets synthesized by the compiler, with the effect that no other translation unit can see names from an unnamed namespace, hence making it local even though the name may have external linkage.
 Therefore, although *flag* in CCC has external linkage, its real name is *UNIQUE::flag*, but since *UNIQUE* is only known to *x.cpp*, it's effectively local to *x.cpp* and is therefore not known to any other translation unit.
 
+
 ## scope resolution operator without a scope
 
 It means global scope. You might need to use this operator when you have conflicting functions or variables in the same scope and you need to use a global one. You might have something like:
@@ -82,6 +96,7 @@ class foo {
 ```
 
 If you need to call the global `bar()` function from within a class member function, you should use `::bar()` to get to the global version of the function.
+
 
 ## References
 
