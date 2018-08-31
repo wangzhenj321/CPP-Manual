@@ -4,7 +4,7 @@
 
 [decltype and the new return value syntax](#decltype-and-the-new-return-value-syntax)
 
-[Auto, References, Pointers and Const](#Auto, References, Pointers-and-Const)
+[Auto, References, Pointers and Const](#auto-references-pointers-and-const)
 
 [References](#References)
 
