@@ -1,4 +1,13 @@
-# Part 1 default member values best practice
+#### Table of Contents
+
+[Part 1: default member values best practice](#)
+
+[Part 2: use member initialization list](#)
+
+[Part 3: new C++11 initialization forms](#)
+
+
+# Part 1: default member values best practice
 
 ## Question
 
@@ -66,7 +75,7 @@ In this hypothetical example, the member `done` is always required to start as `
 1. [Default member values best practice](https://stackoverflow.com/questions/11594846/default-member-values-best-practice)
 
 
-# Part 2 use member initialization list
+# Part 2: use member initialization list
 
 ## Question
 
@@ -139,7 +148,7 @@ private:
 1. [Why should I prefer to use member initialization list?](https://stackoverflow.com/questions/926752/why-should-i-prefer-to-use-member-initialization-list)
 
 
-# Part 3 new C++11 initialization forms
+# Part 3: new C++11 initialization forms
 
 
 
