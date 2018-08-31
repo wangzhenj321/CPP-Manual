@@ -4,7 +4,7 @@
 
 [Part 2: use member initialization list](#part-2-use-member-initialization-list)
 
-[Part 3: new C++11 initialization forms](#)
+[Part 3: new C++11 initialization forms](#part-3-new-c11-initialization-forms)
 
 
 # Part 1: default member values best practice
