@@ -1,8 +1,13 @@
-***References:*** https://www.cprogramming.com/c++11/c++11-auto-decltype-return-value-after-function.html
+**Table of Contents**
 
-C++11 introduces several new handy-dandy type inference capabilities that mean you can spend less time having to write out things the compiler already knows. There are, of course, times when you need to help out the compiler or your fellow programmers. But with C++11, you can spend less time on the mundane stuff and focus on the logic.
+[auto](#auto)
 
-Let's start by looking at the most immediately obvious new benefit, the auto keyword.
+[decltype and the new return value syntax](#decltype-and-the-new-return-value-syntax)
+
+[Auto, References, Pointers and Const](#Auto, References, Pointers-and-Const)
+
+[References](#References)
+
 
 ## auto
 
@@ -64,6 +69,7 @@ makeAndProcessObject( builder );
 ```
 
 This is way better for the caller, and the template code loses nothing in readability--if anything, it's easier to understand!
+
 
 ## decltype and the new return value syntax
 
@@ -171,6 +177,7 @@ makeAndProcessObject (const Builder& builder) -> decltype( builder.makeObject() 
 
 This only works with the new return value syntax because under the old syntax, we couldn't refer to the function argument, builder, at the point where we declare the return type. With the new syntax, all of the arguments to a function are fair game!
 
+
 ## Auto, References, Pointers and Const
 
 One question that is sure to come up is how auto handles references:
@@ -223,3 +230,8 @@ auto p_bar = const_foo(); // const int*
 ```
 
 Overall, it feels quite natural and normal, and it follows the normal type inference rules of templates in C++.
+
+
+## References
+
+1. [Improved Type Inference in C++11: auto, decltype, and the new function declaration syntax](https://www.cprogramming.com/c++11/c++11-auto-decltype-return-value-after-function.html)
