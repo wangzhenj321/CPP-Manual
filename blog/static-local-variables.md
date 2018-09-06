@@ -1,6 +1,6 @@
-***References:*** https://en.cppreference.com/w/cpp/language/storage_duration
+## static local variables
 
-Variables declared at block scope with the specifier **static** have static storage duration but are initialized the first time control passes through their declaration (unless their initialization is zero- or constant-initialization, which can be performed before the block is first entered). On all further calls, the declaration is skipped.
+Variables declared at block scope with the specifier **static** have static storage duration but are initialized the first time control passes through their declaration (unless their initialization is **zero- or constant-initialization**, which can be performed before the block is first entered). On all further calls, the declaration is skipped.
 
 If the initialization throws an exception, the variable is not considered to be initialized, and initialization will be attempted again the next time control passes through the declaration.
 
@@ -11,3 +11,21 @@ If multiple threads attempt to initialize the same static local variable concurr
 The destructor for a block-scope static variable is called at program exit, but only if the initialization took place successfully.
 
 Function-local static objects in all definitions of the same inline function (which may be implicitly inline) all refer to the same object defined in one translation unit.
+
+### References
+
+1. [Storage class specifiers](https://en.cppreference.com/w/cpp/language/storage_duration)
+
+
+## zero initialization
+
+### References
+
+1. [zero initialization](https://en.cppreference.com/w/cpp/language/zero_initialization)
+
+
+## constant initialization
+
+### References
+
+1. [constant initialization](https://en.cppreference.com/w/cpp/language/constant_initialization)
