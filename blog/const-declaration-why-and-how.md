@@ -1,5 +1,3 @@
-**References**: [The C++ 'const' Declaration: Why & How](http://duramecho.com/ComputerInformation/WhyHowCppConst.html)
-
 ## Simple Use of 'const'
 
 The simplest use is to declare a named constant. This was available in the ancestor of C++, C.
@@ -163,3 +161,7 @@ Besides the confusingness of the 'const' syntax, there are some useful things wh
 1. One in particular annoys me because my programs often needed to be optimized for speed. This is that a method which is declared 'const' cannot even make changes to the hidden parts of its object that would not make any changes that would be apparent from the outside. This includes storing intermediary results of long calculations which would save processing time in subsequent calls to the class’s methods. Instead it either has to pass such intermediary results back to the calling routine to store and pass back next time (messy) or recalculate from scratch next time (inefficient). In later versions of C++, the 'mutable' keyword was added which enables ‘const’ to be overridden for this purpose but it totally relies on trusting the programmer to only use it for that purpose so, if you have to write a program using someone else's class which uses ‘mutable’ then you cannot guarantee that ‘mutable’ things will really be constant which renders 'const' virtually useless.
 
 2. One cannot simply avoid using 'const' on class methods because 'const' is infectious. An object which has been made 'const', for example by being passed as a parameter in the 'const &' way, can only have those of its methods that are explicitly declared 'const' called (because C++’s calling system is too simple to work out which methods not explicitly declared 'const' don’t actually change anything). Therefore class methods that don’t change the object are best declared 'const' so that they are not prevented from being called when an object of the class has somehow acquired ‘const’ status. In later versions of C++, an object or variable which has been declared 'const' can be converted to changeable by use of ‘const_cast’ which is a similar bodge to ‘mutable’ and using it likewise renders 'const' virtually useless.
+
+## References
+
+1. [The C++ 'const' Declaration: Why & How](http://duramecho.com/ComputerInformation/WhyHowCppConst.html)
