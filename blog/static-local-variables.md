@@ -22,11 +22,13 @@ Function-local static objects in all definitions of the same inline function (wh
 ### Syntax
 
 (1)
+
     ```c++
     static T object ;
     ```
 
 (2)
+
     ```c++
     T () ;
     T t = {} ; 
@@ -34,6 +36,7 @@ Function-local static objects in all definitions of the same inline function (wh
     ```
 
 (3)
+
     ```c++
     char array [ n ] = "";
     ```
