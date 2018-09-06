@@ -21,25 +21,14 @@ Function-local static objects in all definitions of the same inline function (wh
 
 ### Syntax
 
-(1)
+(1) `static T object ;`
 
-    ```c++
-    static T object ;
-    ```
-
-(2)
-
-    ```c++
-    T () ;
+(2) `T () ;
     T t = {} ; 
     T {} ;
-    ```
+    `
 
-(3)
-
-    ```c++
-    char array [ n ] = "";
-    ```
+(3) `char array [ n ] = "";`
 
 ### Explanation
 
