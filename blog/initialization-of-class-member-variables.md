@@ -4,9 +4,11 @@
 
 [Part 2: use member initialization list](#part-2-use-member-initialization-list)
 
-[Part 3: new C++11 initialization forms](#part-3-new-c11-initialization-forms)
+[Part 3: initialize const member variable in a class]()
 
-[Part 4: class member variables without initialization](#part-4-class-member-variables-without-initialization)
+[Part 4: new C++11 initialization forms](#part-4-new-c11-initialization-forms)
+
+[Part 5: class member variables without initialization](#part-5-class-member-variables-without-initialization)
 
 
 # Part 1: default member values best practice
@@ -152,7 +154,45 @@ private:
 1. [Why should I prefer to use member initialization list?](https://stackoverflow.com/questions/926752/why-should-i-prefer-to-use-member-initialization-list)
 
 
-# Part 3: new C++11 initialization forms
+# Part 3: initialize const member variable in a class
+
+There are couple of ways to initialize the const members inside the class..
+
+Definition of const member in general, needs initialization of the variable too..
+
+1. Inside the class , if you want to initialize the const the syntax is like this
+
+    ```c++
+    static const int a = 10; //at declaration
+    ```
+
+2. Second way can be
+
+    ```c++
+    class A
+    {
+      static const int a; //declaration
+    };
+
+    const int A::a = 10; //defining the static member outside the class
+    ```
+
+3. Well if you don't want to initialize at declaration, then the other way is to through constructor, the variable needs to be initialized in the initialization list(not in the body of the constructor). It has to be like this
+
+    ```c++
+    class A
+    {
+      const int b;
+      A(int c) : b(c) {} //const member initialized in initialization list
+    };
+    ```
+
+## References
+
+1. [How to initialize const member variable in a class?](https://stackoverflow.com/questions/14495536/how-to-initialize-const-member-variable-in-a-class)
+
+
+# Part 4: new C++11 initialization forms
 
 ## Brace-Initialization
 
@@ -269,7 +309,7 @@ C c2(5); //c.x = 5
 1. [Get to Know the New C++11 Initialization Forms](http://www.informit.com/articles/article.aspx?p=1852519)
 
 
-# Part 4: class member variables without initialization
+# Part 5: class member variables without initialization
 
 ## Avoiding uninitialized members
 
