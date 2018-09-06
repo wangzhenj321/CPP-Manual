@@ -19,6 +19,35 @@ Function-local static objects in all definitions of the same inline function (wh
 
 ## zero initialization
 
+### Syntax
+
+(1)
+    ```c++
+    static T object ;
+    ```
+
+(2)
+    ```c++
+    T () ;
+    T t = {} ; 
+    T {} ;
+    ```
+
+(3)
+    ```c++
+    char array [ n ] = "";
+    ```
+
+### Explanation
+
+Zero initialization is performed in the following situations:
+
+(1) For every named variable with static or thread-local storage duration that is not subject to constant initialization (since C++14), before any other initialization.
+
+(2) As part of value-initialization sequence for non-class types and for members of value-initialized class types that have no constructors, including value initialization of elements of aggregates for which no initializers are provided.
+
+(3) When a character array is initialized with a string literal that is too short, the remainder of the array is zero-initialized.
+
 ### References
 
 1. [zero initialization](https://en.cppreference.com/w/cpp/language/zero_initialization)
