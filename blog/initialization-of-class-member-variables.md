@@ -4,7 +4,7 @@
 
 [Part 2: use member initialization list](#part-2-use-member-initialization-list)
 
-[Part 3: initialize const member variable in a class]()
+[Part 3: initialize const member variable in a class](#part-3-initialize-const-member-variable-in-a-class)
 
 [Part 4: new C++11 initialization forms](#part-4-new-c11-initialization-forms)
 
