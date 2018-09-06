@@ -124,7 +124,7 @@ template <class T> class mycontainer { ... };
 template <> class mycontainer <char> { ... };
 ```
 
-**The first line is the generic template, and the second one is the specialization.***
+***The first line is the generic template, and the second one is the specialization.***
 
 When we declare specializations for a template class, we must also define all its members, even those identical to the generic template class, because ***there is no "inheritance" of members from the generic template to the specialization.***
 
