@@ -1,3 +1,18 @@
+**Table of Contents**
+
+[Simple Use of 'const'](#simple-use-of-const)
+
+[Use of 'const' in Functions Return Values](#use-of-const-in-functions-return-values)
+
+[Where it Gets Messy - in Parameter Passing](#where-it-gets-messy---in-parameter-passing)
+
+[Messier Still - in the Object Oriented Programming](#messier-still---in-the-object-oriented-programming)
+
+[Inconveniences of 'const'](#inconveniences-of-const)
+
+[References](#references)
+
+
 ## Simple Use of 'const'
 
 The simplest use is to declare a named constant. This was available in the ancestor of C++, C.
