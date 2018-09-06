@@ -1,7 +1,5 @@
 ## Part 1
 
-***References:*** [What does the explicit keyword mean?](https://stackoverflow.com/questions/121162/what-does-the-explicit-keyword-mean)
-
 The compiler is allowed to make one implicit conversion to resolve the parameters to a function. What this means is that the compiler can use constructors callable with a ***single parameter*** to convert from one type to another in order to get the right type for a parameter.
 
 Here's an example class with a constructor that can be used for implicit conversions:
@@ -50,10 +48,16 @@ The reason you might want to do this is to avoid accidental construction that ca
 
 - You have a `MyString(int size)` class with a constructor that constructs a string of the given size. You have a function `print(const MyString&)`, and you call `print(3)` (when you actually intended to call `print("3")`). You expect it to print "3", but it prints an empty string of length 3 instead.
 
-## Part 2
+### References
 
-***References:*** [Explicit keyword on multi-arg constructor?](https://stackoverflow.com/questions/1118680/explicit-keyword-on-multi-arg-constructor)
+1. [What does the explicit keyword mean?](https://stackoverflow.com/questions/121162/what-does-the-explicit-keyword-mean)
+
+## Part 2
 
 In C++11 multi-parameter constructors can be implicitly converted to with brace initialization.
 
 However, before C++11 `explicit` only applied to single-argument constructors. For multiple-argument constructors, it was ignored and had no effect.
+
+### References
+
+1. [Explicit keyword on multi-arg constructor?](https://stackoverflow.com/questions/1118680/explicit-keyword-on-multi-arg-constructor)
