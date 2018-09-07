@@ -13,7 +13,7 @@ Once the header is included, it checks if a unique value (in this case `HEADERFI
 
 When the code is included again, the first `ifndef` fails, resulting in a blank file.
 
-***That prevents double declaration of any identifiers such as types, enums and static variables.***
+**That prevents double declaration of any identifiers such as types, enums and static variables.**
 
 ### References
 
@@ -24,7 +24,7 @@ When the code is included again, the first `ifndef` fails, resulting in a blank 
 
 为了避免同一个文件被`include`多次，C/C++中有两种方式，一种是`#ifndef`方式，一种是`#pragma once`方式。在能够支持这两种方式的编译器上，二者并没有太大的区别，但是两者仍然还是有一些细微的区别。
 
-***方式一：***
+**方式一：**
 
 ```c++
 #ifndef __SOMEFILE_H__
@@ -33,7 +33,7 @@ When the code is included again, the first `ifndef` fails, resulting in a blank 
 #endif
 ```
 
-***方式二：***
+**方式二：**
 
 ```c++
 #pragma once
