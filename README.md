@@ -30,6 +30,7 @@ Basic manual about how to use c++
 4. [explicit keyword](blog/explicit-keyword.md)
 5. [extern](blog/extern.md)
 6. [virtual](blog/virtual.md)
+7. [volatile vs atomic](blog/volatile-vs-atomic.md)
 
 ## Debug
 
