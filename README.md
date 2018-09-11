@@ -19,6 +19,7 @@ Basic manual about how to use c++
 14. [void pointer vs null pointer](blog/void-pointer-vs-null-pointer)
 15. [xxxxh vs cxxxx](blog/xxxxh-vs-cxxxx.md)
 16. [预处理 编译 汇编 链接](blog/预处理-编译-汇编-链接.md)
+17. [smart pointer](blog/smart-pointer.md)
 
 ## Keywords
 
