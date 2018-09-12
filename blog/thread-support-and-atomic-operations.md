@@ -31,3 +31,5 @@
 - [C++11 并发指南二(std::thread 详解)](http://www.cnblogs.com/haippy/p/3236136.html)
 
 - [C++11 并发指南三(std::mutex 详解)](https://www.cnblogs.com/haippy/p/3237213.html)
+
+- [Top 20 C++ multithreading mistakes and how to avoid them](http://www.acodersjourney.com/2017/08/top-20-cplusplus-multithreading-mistakes/)
