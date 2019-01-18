@@ -1,5 +1,5 @@
 # CPP-Manual
-Basic manual about how to use c++
+Basic manual about how to use C++
 
 ## Basic
 
