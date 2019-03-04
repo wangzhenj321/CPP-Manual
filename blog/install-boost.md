@@ -59,7 +59,7 @@ sudo ./b2 install
 
 # For Windows 10
 
-If your code compiled with Visual Studio needs Boost, you can get [prebuilt Boost libraries](http://boost.teeks99.com/). However, if your code needs to link with Boost library files, then the Visual Studio version used for your code and used to build Boost has to match. If you cannot find a prebuilt Boost library matching your Visual Studio then you might have to build Boost by yourself. I had this problem since my code was using C++11 features that required Visual Studio 2015, but the prebuilt Boost libraries were only available for Visual Studio 2012.
+If your code compiled with Visual Studio needs Boost, you can get [prebuilt Boost libraries](http://boost.teeks99.com/). However, if your code needs to link with Boost library files, then **the Visual Studio version used for your code and used to build Boost has to match**. If you cannot find a prebuilt Boost library matching your Visual Studio then you might have to build Boost by yourself. I had this problem since my code was using C++11 features that required Visual Studio 2015, but the prebuilt Boost libraries were only available for Visual Studio 2012.
 
 ## Prerequisities
 
