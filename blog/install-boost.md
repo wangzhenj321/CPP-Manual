@@ -1,3 +1,31 @@
+**Table of Contents**
+
+[For Ubuntu 16.04](#for-ubuntu-1604)
+
+- [Uninstall boost](#uninstall-boost)
+
+- [Install newer version of boost](#install-newer-version-of-boost)
+
+- [References](#references)
+
+[For Windows 10](#for-windows-10)
+
+- [Prerequisities](#prerequisities)
+
+    - [Version list of Microsoft Visual C++](#version-list-of-microsoft-visual-c)
+    
+        - [Unknown compiler version while compiling Boost with MSVC](#unknown-compiler-version-while-compiling-boost-with-msvc)
+    
+    - [Developer Command Prompt for Visual Studio](#developer-command-prompt-for-visual-studio)
+    
+    - [Header Only VS Build](#header-only-vs-build)
+    
+    - [Library Naming](#library-naming)
+
+- [Basic build steps](#basic-build-steps)
+
+- [References](#references-1)
+
 # For Ubuntu 16.04
 
 ## Uninstall boost
@@ -124,7 +152,7 @@ with:
 
 The Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables. You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs you've installed. For example, 64-bit versions of Visual Studio provide both 32-bit and 64-bit command prompts. 
 
-#### In Windows 10
+**In Windows 10**
 
 1. In the search box on the taskbar, start typing the name of the tool, such as `dev` or `developer command prompt`. This brings up a list of installed apps that match your search pattern. If you're looking for a different command prompt, try entering a different search term such as `prompt`.
 
