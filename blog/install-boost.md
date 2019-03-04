@@ -100,7 +100,7 @@ MSVC++ 14.16 _MSC_VER == 1916 (Visual Studio 2017 version 15.9)
 
 ![](../img/install-boost/vs_version_info.png?raw=true)
 
-#### [Q & A] Unknown compiler version while compiling Boost with MSVC
+#### Unknown compiler version while compiling Boost with MSVC
 
 Refer to [Unknown compiler version while compiling Boost with MSVC 14.0 (VS 2015)](https://stackoverflow.com/questions/30760889/unknown-compiler-version-while-compiling-boost-with-msvc-14-0-vs-2015).
 
