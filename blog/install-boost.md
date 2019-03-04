@@ -63,7 +63,7 @@ If your code compiled with Visual Studio needs Boost, you can get [prebuilt Boos
 
 ## Prerequisities
 
-### Version of Microsoft Visual C++
+### Version list of Microsoft Visual C++
 
 Refer to [Microsoft Visual C++](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B).
 
@@ -98,6 +98,28 @@ MSVC++ 14.15 _MSC_VER == 1915 (Visual Studio 2017 version 15.8)
 MSVC++ 14.16 _MSC_VER == 1916 (Visual Studio 2017 version 15.9)
 ```
 
+![](../img/install-boost/vs_version_info.png?raw=true)
+
+#### [Q & A] Unknown compiler version while compiling Boost with MSVC
+
+Refer to [Unknown compiler version while compiling Boost with MSVC 14.0 (VS 2015)](https://stackoverflow.com/questions/30760889/unknown-compiler-version-while-compiling-boost-with-msvc-14-0-vs-2015).
+
+Latest (at the time of posting this answer) **Boost 1.58 does** support **MSVC 14.0 Preview** which was the latest MS compiler at the time of Boost 1.58 release. Now, the latest version of Visual Studio is **2015 RC** which isn't covered in the boost 1.58 config file.
+
+To stop Boost 1.58 complaining about unknown compiler version edit `boost/config/compiler/visualc.hpp` and replace:
+
+```
+// last known and checked version is 19.00.22129 (VC14 Preview):
+#if (_MSC_VER > 1800 && _MSC_FULL_VER > 190022310)
+```
+
+with:
+
+```
+// last known and checked version is 19.00.22816 (VC++ 2015 RC):
+#if (_MSC_VER > 1800 && _MSC_FULL_VER > 190022816)
+```
+
 ### Developer Command Prompt for Visual Studio
 
 The Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables. You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs you've installed. For example, 64-bit versions of Visual Studio provide both 32-bit and 64-bit command prompts. 
@@ -125,6 +147,18 @@ Refer to [如何在Visual Studio中使用Boost C++ Library](http://programjustfo
     一些需要先build, 例如: 跟系統有關的
     
     ![](../img/install-boost/include_boost_lib_in_vs.png?raw=true)
+
+### Library Naming
+
+Refer to [Library Naming](https://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#library-naming).
+
+![](../img/install-boost/boost_library_naming.png?raw=true)
+
+- **lib**
+
+    Prefix: except on Microsoft Windows, every Boost library name begins with this string. On Windows, only ordinary static libraries use the lib prefix; import libraries and DLLs do not.5
+    
+    // TODO:
 
 ## Basic build steps
 
@@ -177,6 +211,6 @@ To build Boost for Visual Studio, I followed these steps:
 
 ## References
 
-2. [Prepare to Use a Boost Library Binary](https://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#prepare-to-use-a-boost-library-binary)
+1. [Prepare to Use a Boost Library Binary](https://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#prepare-to-use-a-boost-library-binary)
 
-3. [BUILDING BOOST 1.64, 1.65, 1.66 WITH VISUAL STUDIO 2017](https://studiofreya.com/2017/04/23/building-boost-1-64-with-visual-studio-2017/)
+2. [BUILDING BOOST 1.64, 1.65, 1.66 WITH VISUAL STUDIO 2017](https://studiofreya.com/2017/04/23/building-boost-1-64-with-visual-studio-2017/)
