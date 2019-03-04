@@ -65,7 +65,7 @@ If your code compiled with Visual Studio needs Boost, you can get [prebuilt Boos
 
 ### Version of Microsoft Visual C++
 
-Refer to [Microsoft Visual C++](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B)
+Refer to [Microsoft Visual C++](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B).
 
 ```
 MSC    1.0   _MSC_VER == 100
@@ -110,7 +110,25 @@ The Developer Command Prompt for Visual Studio enables you to use .NET Framework
 
 ![](../img/install-boost/developer_command_prompt_for_visual_studio.png?raw=true)
 
+### Header Only VS Build
+
+Refer to [如何在Visual Studio中使用Boost C++ Library](http://programjustforfun.blogspot.com/2016/10/visual-studioboost-c-library.html).
+
+1. 不需要Build: Header Only
+
+    大部分Lib只需要include Header就行了, Library code都寫在header. 對於不用build的Lib，只要include header就行了
+    
+    ![](../img/install-boost/include_boost_header_in_vs.png?raw=true)
+
+2. 需要Build: 
+
+    一些需要先build, 例如: 跟系統有關的
+    
+    ![](../img/install-boost/include_boost_lib_in_vs.png?raw=true)
+
 ## Basic build steps
+
+Refer to [How to build Boost using Visual Studio](https://codeyarns.com/2014/06/06/how-to-build-boost-using-visual-studio/).
 
 To build Boost for Visual Studio, I followed these steps:
 
@@ -131,6 +149,8 @@ To build Boost for Visual Studio, I followed these steps:
     ```
     b2 toolset=msvc-14.0 --build-type=complete --abbreviate-paths architecture=x86 address-model=64 install -j4
     ```
+    
+    **Options**
     
     - `toolset`: Use this to specify the Visual C++ compiler to use. For Visual Studio 2015, this is msvc-14.0. For other versions of Visual Studio see this post.
     
@@ -155,14 +175,8 @@ To build Boost for Visual Studio, I followed these steps:
     
     - choosing a specific build variant by adding `release` or `debug` to the command line.
 
-
-
 ## References
-
-1. [How to build Boost using Visual Studio](https://codeyarns.com/2014/06/06/how-to-build-boost-using-visual-studio/)
 
 2. [Prepare to Use a Boost Library Binary](https://www.boost.org/doc/libs/1_55_0/more/getting_started/windows.html#prepare-to-use-a-boost-library-binary)
 
 3. [BUILDING BOOST 1.64, 1.65, 1.66 WITH VISUAL STUDIO 2017](https://studiofreya.com/2017/04/23/building-boost-1-64-with-visual-studio-2017/)
-
-4. [如何在Visual Studio中使用Boost C++ Library](http://programjustforfun.blogspot.com/2016/10/visual-studioboost-c-library.html)
