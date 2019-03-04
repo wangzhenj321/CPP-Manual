@@ -162,11 +162,11 @@ In order to choose the right binary for your build configuration you need to kno
     
 - **boost_regex**
 
-    Library name: all boost library filenames begin with boost_.
+    Library name: all boost library filenames begin with boost_ (e.g. boost_filesystem = filesystem library).
 
 - **vc71**
 
-    Toolset tag: identifies the toolset and version used to build the binary.
+    Toolset tag: identifies the toolset and version used to build the binary (e.g. vc141 = msvc-14.1 = Visual Studio 2017).
 
 - **mt**
 
@@ -188,7 +188,7 @@ In order to choose the right binary for your build configuration you need to kno
 
 - **1_34**
 
-    Version tag: the full Boost release number, with periods replaced by underscores. For example, version 1.31.1 would be tagged as "-1_31_1".
+    Version tag: the full Boost release number, with periods replaced by underscores. For example, version 1.31.1 would be tagged as "-1_31_1" (e.g. 1_64 = Version 1.64).
 
 - **.lib**
 
