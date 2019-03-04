@@ -40,7 +40,7 @@ Basic manual about how to use C++
 ## Qt & Boost
 
 1. [boost asio synchronous vs asynchronous](blog/boost-asio-synchronous-vs-asynchronous.md)
-2. [install boost on ubuntu](blog/install-boost-on-ubuntu.md)
+2. [install boost](blog/install-boost.md)
 3. [libdbus basic classes and functions](blog/libdbus-basic-classes-and-functions.md)
 4. [libdbus introduction](blog/libdbus-introduction.md)
 5. [mosquitto](blog/mosquitto.md)
