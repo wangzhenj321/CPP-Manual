@@ -1,6 +1,6 @@
 **Table of Contents**
 
-[For Ubuntu 16.04](#for-ubuntu-1604)
+[**For Ubuntu 16.04**](#for-ubuntu-1604)
 
 - [Uninstall boost](#uninstall-boost)
 
@@ -8,7 +8,7 @@
 
 - [References](#references)
 
-[For Windows 10](#for-windows-10)
+[**For Windows 10**](#for-windows-10)
 
 - [Prerequisities](#prerequisities)
 
