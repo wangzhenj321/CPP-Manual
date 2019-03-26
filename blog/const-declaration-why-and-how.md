@@ -59,9 +59,9 @@ declares that *Constant4* is **constant pointer to a constant integer**. Basical
 
 ## Use of 'const' in Functions Return Values
 
-> Of the possible combinations  of pointers and 'const', the constant pointer to a variable is useful for storage that can be changed in value but not moved in memory.
+Of the possible combinations  of pointers and 'const', the constant pointer to a variable is useful for storage that can be changed in value but not moved in memory.
 
-Even more useful is a pointer (constant or otherwise) to a 'const' value. This is useful for returning constant strings and arrays from functions which, because they are implemented as pointers, the program could otherwise try to alter and crash. Instead of a difficult to track down crash, the attempt to alter unalterable values will be detected during compilation.
+**Even more useful is a pointer (constant or otherwise) to a 'const' value.** This is useful for returning constant strings and arrays from functions which, because they are implemented as pointers, the program could otherwise try to alter and crash. **Instead of a difficult to track down crash, the attempt to alter unalterable values will be detected during compilation.**
 
 For example, if a function which returns a fixed "Some text" string is written like
 
