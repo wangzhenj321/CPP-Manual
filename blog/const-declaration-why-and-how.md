@@ -20,7 +20,7 @@ The simplest use is to declare a named constant. This was available in the ances
 To do this, one declares a constant as if it was a variable but add ‘const’ before it. One has to initialise it immediately in the constructor because, of course, one cannot set the value later as that would be altering it. For example,
 
 ```c++
-const int Constant1=96;
+const int Constant1 = 96;
 ```
 
 will create an integer constant, unimaginatively called 'Constant1', with the value 96.
