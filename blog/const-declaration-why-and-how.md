@@ -27,7 +27,7 @@ will create an integer constant, unimaginatively called 'Constant1', with the va
 
 Such constants are useful for parameters which are used in the program but do not need to be changed after the program is compiled.
 
-> **constant VS. `#define`**
+> **constant :vs: `#define`**
 > 
 > It has an advantage for programmers over the C preprocessor `#define` command in that it is understood & used by the compiler itself, not just substituted into the program text by the preprocessor before reaching the main compiler, so error messages are much more helpful.
 
