@@ -37,7 +37,7 @@ It also works with pointers but one has to be careful where ‘const’ is put a
 const int * Constant2
 ```
 
-declares that *Constant2* is a variable pointer to a constant integer and
+declares that *Constant2* is **a variable pointer to a constant integer** and
 
 ```c++
 int const * Constant2
@@ -49,17 +49,17 @@ is an alternative syntax which does the same, whereas
 int * const Constant3
 ```
 
-declares that *Constant3* is constant pointer to a variable integer and
+declares that *Constant3* is **constant pointer to a variable integer** and
 
 ```c++
 int const * const Constant4
 ```
 
-declares that *Constant4* is constant pointer to a constant integer. Basically 'const' applies to whatever is on its immediate left (other than if there is nothing there in which case it applies to whatever is its immediate right).
+declares that *Constant4* is **constant pointer to a constant integer**. Basically 'const' applies to whatever is on its immediate left (other than if there is nothing there in which case it applies to whatever is its immediate right).
 
 ## Use of 'const' in Functions Return Values
 
-Of the possible combinations  of pointers and 'const', the constant pointer to a variable is useful for storage that can be changed in value but not moved in memory.
+> Of the possible combinations  of pointers and 'const', the constant pointer to a variable is useful for storage that can be changed in value but not moved in memory.
 
 Even more useful is a pointer (constant or otherwise) to a 'const' value. This is useful for returning constant strings and arrays from functions which, because they are implemented as pointers, the program could otherwise try to alter and crash. Instead of a difficult to track down crash, the attempt to alter unalterable values will be detected during compilation.
 
