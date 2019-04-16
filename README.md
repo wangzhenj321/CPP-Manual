@@ -62,3 +62,4 @@ Basic manual about how to use C++
 12. [stdafx.h](blog/stdafx.h.md)
 13. [struct and typedef struct](blog/struct-and-typedef-struct.md)
 14. [unscoped scoped enum](blog/unscoped-scoped-enum.md)
+15. [ASCII Unicode UTF8](blog/ASCII-Unicode-UTF8.md)
