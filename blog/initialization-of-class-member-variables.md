@@ -336,3 +336,55 @@ A default constructed object of type `Problematic` is, in fact, problematic, bec
 ## References
 
 1. [Modern C++ Features – Default Initializers for Member Variables](https://arne-mertz.de/2015/08/new-c-features-default-initializers-for-member-variables/)
+
+
+# Part 6: default constructor and its initialization
+
+> In C++, compiler by default creates **default constructor** for every class. But, if we define our own constructor, compiler doesn’t create the **default constructor**.
+
+```c++
+// overloading class constructors
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+    int width, height;
+  public:
+    Rectangle ();
+    Rectangle (int,int);
+    int area (void) {return (width*height);}
+};
+
+Rectangle::Rectangle () {
+  width = 5;
+  height = 5;
+}
+
+Rectangle::Rectangle (int a, int b) {
+  width = a;
+  height = b;
+}
+
+int main () {
+  Rectangle rect (3,4);
+  Rectangle rectb;
+  cout << "rect area: " << rect.area() << endl;
+  cout << "rectb area: " << rectb.area() << endl;
+  return 0;
+}
+```
+
+The **default constructor** is the constructor that takes no parameters, and it is special because it is called when an object is declared but is not initialized with any arguments. In the example above, the **default constructor** is called for `rectb`. Note how `rectb` is not even constructed with an empty set of parentheses - in fact, **empty parentheses cannot be used to call the default constructor**:
+
+```c++
+ectangle rectb;   // ok, default constructor called
+Rectangle rectc(); // oops, default constructor NOT called
+```
+
+> An advantage of **uniform initialization (=Brace-Initialization)** over **functional form (initialization with parentheses)** is that, unlike parentheses, braces cannot be confused with function declarations, and thus can be used to explicitly call default constructors:
+
+```c++
+Rectangle rectb;   // default constructor called
+Rectangle rectc(); // function declaration (default constructor NOT called)
+Rectangle rectd{}; // default constructor called
+```
