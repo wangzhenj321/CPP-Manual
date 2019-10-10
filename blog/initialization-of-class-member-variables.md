@@ -383,7 +383,7 @@ ectangle rectb;   // ok, default constructor called
 Rectangle rectc(); // oops, default constructor NOT called
 ```
 
-> An advantage of **uniform initialization (=Brace-Initialization)** over **functional form (initialization with parentheses)** is that, unlike parentheses, braces cannot be confused with function declarations, and thus can be used to explicitly call default constructors:
+An advantage of **uniform initialization (=Brace-Initialization)** over **functional form (initialization with parentheses)** is that, unlike parentheses, braces cannot be confused with function declarations, and thus can be used to explicitly call default constructors:
 
 ```c++
 Rectangle rectb;   // default constructor called
