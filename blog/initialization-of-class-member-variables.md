@@ -10,6 +10,8 @@
 
 [Part 5: class member variables without initialization](#part-5-class-member-variables-without-initialization)
 
+[Part 6: default constructor and its initialization](#part-6-default-constructor-and-its-initialization)
+
 
 # Part 1: default member values best practice
 
