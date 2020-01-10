@@ -1,4 +1,4 @@
-## Part 1: Inline functions
+# Part 1: Inline functions
 
 ***References:*** http://www.cplusplus.com/doc/tutorial/functions/
 
@@ -19,7 +19,7 @@ This informs the compiler that when `concatenate` is called, the program prefers
 
 Note that most compilers already optimize code to generate inline functions when they see an opportunity to improve efficiency, even if not explicitly marked with the `inline` specifier. Therefore, this specifier merely indicates the compiler that inline is preferred for this function, although the compiler is free to not inline it, and optimize otherwise. In C++, optimization is a task delegated to the compiler, which is free to generate any code for as long as the resulting behavior is the one specified by the code.
 
-## Part 2: Normal function vs Inline function
+# Part 2: Normal function vs Inline function
 
 ***References:*** https://www.quora.com/What-is-the-difference-between-normal-function-and-inline-function-in-c++-language
 
