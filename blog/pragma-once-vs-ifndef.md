@@ -1,4 +1,4 @@
-## Part 1
+# Part 1
 
 ```c++
 #ifndef HEADERFILE_H
@@ -15,12 +15,12 @@ When the code is included again, the first `ifndef` fails, resulting in a blank 
 
 **That prevents double declaration of any identifiers such as types, enums and static variables.**
 
-### References
+## References
 
 1. [Why are #ifndef and #define used in C++ header files?](https://stackoverflow.com/questions/1653958/why-are-ifndef-and-define-used-in-c-header-files) 
 
 
-## Part 2
+# Part 2
 
 为了避免同一个文件被`include`多次，C/C++中有两种方式，一种是`#ifndef`方式，一种是`#pragma once`方式。在能够支持这两种方式的编译器上，二者并没有太大的区别，但是两者仍然还是有一些细微的区别。
 
@@ -58,6 +58,6 @@ When the code is included again, the first `ifndef` fails, resulting in a blank 
 
 看起来似乎是想兼有两者的优点。不过只要使用了`#ifndef`就会有宏名冲突的危险，也无法避免不支持`#pragma once`的编译器报错，所以混用两种方法似乎不能带来更多的好处，倒是会让一些不熟悉的人感到困惑。选择哪种方式，应该在了解两种方式的情况下，视具体情况而定。只要有一个合理的约定来避开缺点，我认为哪种方式都是可以接受的。而这个已经不是标准或者编译器的责任了，应当由程序员自己或者小范围内的开发规范来搞定。
 
-### References
+## References
 
 1. [#pragma once 与 #ifndef 解析](http://www.cnblogs.com/hokyhu/archive/2009/03/30/1425604.html)
