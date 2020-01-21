@@ -6,13 +6,11 @@ Basic manual about how to use C++
 1. [calling conventions](blog/calling-conventions.md)
 1. [function templates and class templates](blog/function-templates-and-class-templates.md)
 1. [cpp study notes](blog/cpp-study-notes.md)
-1. [cpp time class](blog/cpp_time_class.md)
 1. [forward declaration](blog/forward-declaration.md)
 1. [function pointer](blog/function-pointer.md)
 1. [inheritance](blog/inheritance.md)
 1. [inline function](blog/inline-function.md)
 1. [polymorphism](blog/polymorphism.md)
-1. [string cstdio](blog/string-cstdio.md)
 1. [translation unit](blog/translation-unit.md)
 1. [type in cpp](blog/type-in-cpp.md)
 1. [void pointer vs null pointer](blog/void-pointer-vs-null-pointer.md)
@@ -31,6 +29,11 @@ Basic manual about how to use C++
 1. [extern](blog/extern.md)
 1. [virtual](blog/virtual.md)
 1. [volatile vs atomic](blog/volatile-vs-atomic.md)
+
+## Modules
+
+1. [cpp time class](blog/cpp_time_class.md)
+1. [string cstdio](blog/string-cstdio.md)
 
 ## Debug
 
