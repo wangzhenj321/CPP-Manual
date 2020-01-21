@@ -21,10 +21,10 @@ Basic manual about how to use C++
 
 ## Keywords
 
-1. [auto decltype return value after function](blog/auto-decltype-return-value-after-function.md)
-1. [const declaration why and how](blog/const-declaration-why-and-how.md)
-1. [cpp cast](blog/cpp-cast.md)
-1. [explicit keyword](blog/explicit-keyword.md)
+1. [auto and decltype](blog/auto-and-decltype.md)
+1. [const](blog/const.md)
+1. [cast](blog/cast.md)
+1. [explicit](blog/explicit.md)
 1. [extern](blog/extern.md)
 1. [virtual](blog/virtual.md)
 1. [volatile vs atomic](blog/volatile-vs-atomic.md)
