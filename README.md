@@ -20,7 +20,7 @@ Basic manual about how to use C++
 1. [预处理 编译 汇编 链接](blog/预处理-编译-汇编-链接.md)
 1. [smart pointer](blog/smart-pointer.md)
 1. [thread mutex atomic](blog/thread-mutex-atomic.md)
-1. [overload vs ovriride vs overwrite](blog/overload-override-overwrite.md)
+1. [overload vs override vs overwrite](blog/overload-override-overwrite.md)
 
 ## Keywords
 
