@@ -18,7 +18,7 @@ C++语言： __cdecl、__stdcall、__fastcall、naked、__pascal、__thiscall，
 
 下面就分别介绍这几种调用方式：
 
-#### 1. stdcall
+1. stdcall
 
 __stdcall 是 StandardCall 的缩写，是C++的标准调用方式。stdcall 调用方式又被称为 Pascal 调用方式。在Microsoft C++系列的C/C++编译器中，使用 PASCAL 宏，WINAPI 宏和 CALLBACK 宏来指定函数的调用方式为 stdcall。
 
@@ -33,7 +33,7 @@ stdcall的调用方式意味着：
 （2）由被调用函数自己来恢复堆栈，称为自动清栈。
 （3）函数名自动加前导下划线，后面紧跟着一个@，其后紧跟着参数的大小。
 
-#### 2. cdecl
+2. cdecl
 
 __cdecl 是C Declaration的缩写（declaration，声明），cdecl调用方式又称为C调用方式，是C语言缺省的调用方式。
 
@@ -50,7 +50,7 @@ cdecl的调用方式意味着：
 （3）函数名自动加前导下划线。
 由于是由调用者来恢复堆栈，因此C调用方式允许函数的参数个数是不固定的，这是C语言的一大特色。
 
-#### 3. fastcall
+3. fastcall
 
 fastcall 按照名字上理解就可以知道，它是一种快速调用方式，因为它通过 CPU 寄存器来传递参数。此方式的函数的第一个和第二个DWORD参数通过ecx和edx传递，后面的参数从右向左的顺序压入栈。被调用函数清理堆栈。
 
@@ -60,7 +60,7 @@ fastcall 按照名字上理解就可以知道，它是一种快速调用方式�
 int fastcall function(int a, int b);
 ```
 
-#### 4. thiscall
+4. thiscall
 
 thiscall 调用方式是唯一一种不能显示指定的修饰符。它是C++类成员函数缺省的调用方式。由于成员函数调用还有一个this指针，因此必须用这种特殊的调用方式。
 
@@ -68,7 +68,7 @@ thiscall调用方式意味着：
 （1）参数从右向左压入栈。
 （2）如果参数个数确定，this指针通过ecx传递给被调用者；如果参数个数不确定，this指针在所有参数压入栈后被压入栈。参数个数不定的，由调用者清理堆栈，否则由函数自己清理堆栈。可以看到，对于参数个数固定的情况，它类似于stdcall，不定时则类似于cdecl。
 
-#### 5. naked call
+5. naked call
 
 是一种比较少见的调用方式，一般高级程序设计语言中不常见。函数的声明调用方式和实际调用方式必须一致，否则编译器会产生混乱。
 
