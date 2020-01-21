@@ -64,7 +64,7 @@ The correct usage is to use `cstdio` and fully qualify the symbol names or else 
 ***Sample 3:***
 
 ```c++
-#include<cstdio>
+#include <cstdio>
 
 using std::printf;
 
