@@ -66,3 +66,4 @@ Basic manual about how to use C++
 1. [struct and typedef struct](blog/struct-and-typedef-struct.md)
 1. [unscoped scoped enum](blog/unscoped-scoped-enum.md)
 1. [ASCII Unicode UTF8](blog/ASCII-Unicode-UTF8.md)
+1. [set NULL a pointer after deleting it](blog/set-NULL-a-pointer-after-deleting-it.md)
