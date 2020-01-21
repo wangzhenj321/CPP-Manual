@@ -152,6 +152,53 @@ my_shared_ptr4()->show();
 
 关于`shared_ptr`更多使用方式，推荐[《C++14 N叉树使用shared_ptr智能指针》](https://blog.csdn.net/qingdujun/article/details/87805085) 一文。
 
+---
+
+Refers to https://www.cnblogs.com/jiayayao/p/6128877.html.
+
+**使用`shared_ptr`需要注意的问题**
+
+- 不要用一个原始指针初始化多个`shared_ptr`，原因在于，会造成二次销毁，如下所示：
+
+    ```c++
+    int *p5 = new int;
+    std::shared_ptr<int> p6(p5);
+    std::shared_ptr<int> p7(p5);// logic error
+    ```
+
+- 不要在函数实参中创建`shared_ptr`。因为C++的函数参数的计算顺序在不同的编译器下是不同的。正确的做法是先创建好，然后再传入。
+
+    ```c++
+    function(shared_ptr<int>(new int), g());
+    ```
+
+- 避免循环引用。智能指针最大的一个陷阱是循环引用，循环引用会导致内存泄漏。解决方法是AStruct或BStruct改为`weak_ptr`。
+
+    ```c++
+    struct AStruct;
+    struct BStruct;
+
+    struct AStruct {
+        std::shared_ptr<BStruct> bPtr;
+        ~AStruct() { cout << "AStruct is deleted!"<<endl; }
+    };
+
+    struct BStruct {
+        std::shared_ptr<AStruct> APtr;
+        ~BStruct() { cout << "BStruct is deleted!" << endl; }
+    };
+
+    void TestLoopReference()
+    {
+        std::shared_ptr<AStruct> ap(new AStruct);
+        std::shared_ptr<BStruct> bp(new BStruct);
+        ap->bPtr = bp;
+        bp->APtr = ap;
+    }
+    ```
+
+---
+
 ## `weak_ptr`
 
 `weak_ptr`是`shared_ptr`的黄金伙伴。从上文知道`shared_ptr`与`shared_ptr`之间，每拷贝一次，引用计数就会+1，而如果使用`weak_ptr`则不会出现这个现象。
