@@ -1,4 +1,4 @@
-## Part 1: Pointers to functions
+# Part 1: Pointers to functions
 
 ***References:*** http://www.cplusplus.com/doc/tutorial/pointers/
 
@@ -40,7 +40,7 @@ In the example above, `minus` is a pointer to a function that has two parameters
 int (* minus)(int,int) = subtraction;
 ```
 
-## Part 2: Function pointer to member function
+# Part 2: Function pointer to member function
 
 ***References:*** https://stackoverflow.com/questions/2402579/function-pointer-to-member-function
 
