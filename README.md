@@ -8,6 +8,7 @@ Basic manual about how to use C++
 1. [cpp study notes](blog/cpp-study-notes.md)
 1. [forward declaration](blog/forward-declaration.md)
 1. [function pointer](blog/function-pointer.md)
+1. [friend](blog/friend.md)
 1. [inheritance](blog/inheritance.md)
 1. [inline function](blog/inline-function.md)
 1. [polymorphism](blog/polymorphism.md)
