@@ -16,7 +16,7 @@ Basic manual about how to use C++
 1. [void pointer vs null pointer](blog/void-pointer-vs-null-pointer.md)
 1. [预处理 编译 汇编 链接](blog/预处理-编译-汇编-链接.md)
 1. [smart pointer](blog/smart-pointer.md)
-1. [thread mutex atomic](blog/thread-mutex-atomic.md)
+1. [thread mutex atomic](blog/thread-support-and-atomic-operations.md)
 1. [overload vs override vs overwrite](blog/overload-override-overwrite.md)
 
 ## Keywords
