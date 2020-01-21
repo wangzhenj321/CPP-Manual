@@ -14,7 +14,7 @@ Consider the following programs:
 ***Sample 1:***
 
 ```c++
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -26,7 +26,7 @@ int main()
 ***Sample 2:***
 
 ```c++
-#include<cstdio>
+#include <cstdio>
 
 int main()
 {
