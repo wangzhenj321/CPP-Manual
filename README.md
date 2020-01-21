@@ -20,6 +20,7 @@ Basic manual about how to use C++
 1. [预处理 编译 汇编 链接](blog/预处理-编译-汇编-链接.md)
 1. [smart pointer](blog/smart-pointer.md)
 1. [thread mutex atomic](blog/thread-mutex-atomic.md)
+1. [overload vs ovriride vs overwrite](blog/overload-override-overwrite.md)
 
 ## Keywords
 
@@ -50,12 +51,12 @@ Basic manual about how to use C++
 1. [QA](blog/QA.md)
 1. [an unnamed namespace used instead of static](blog/an-unnamed-namespace-used-instead-of-static.md)
 1. [array assignment and initialization](blog/array-assignment-and-initialization.md)
-1 [initialization of class member variables](blog/initialization-of-class-member-variables.md)
-1 [install the latest version of gcc](blog/install-the-latest-version-of-gcc.md)
-1 [not using namespace std](blog/not-using-namespace-std.md)
-1 [pointer variable vs reference variable](blog/pointer-variable-vs-reference-variable.md)
-1 [pragma once vs ifndef](blog/pragma-once-vs-ifndef.md)
-1 [pragma pack](blog/pragma-pack.md)
+1. [initialization of class member variables](blog/initialization-of-class-member-variables.md)
+1. [install the latest version of gcc](blog/install-the-latest-version-of-gcc.md)
+1. [not using namespace std](blog/not-using-namespace-std.md)
+1. [pointer variable vs reference variable](blog/pointer-variable-vs-reference-variable.md)
+1. [pragma once vs ifndef](blog/pragma-once-vs-ifndef.md)
+1. [pragma pack](blog/pragma-pack.md)
 1. [range based for loop](blog/range-based-for-loop.md)
 1. [static local variables](blog/static-local-variables.md)
 1. [stdafx.h](blog/stdafx.h.md)
