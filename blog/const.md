@@ -98,8 +98,11 @@ void Subroutine1(int Parameter1)
 
 accepts the parameter passed to it in the default C & C++ way - which is a copy. Therefore the subroutine can read the value of the variable passed to it but not alter it because any alterations it makes are only made to the copy and are lost when the subroutine ends. E.g.
 
+```c++
 void Subroutine2(int Parameter1)
 { Parameter1=96;}
+```
+
 would leave the variable it was called with unchanged not set to 96.
 
 The addition of an '&' to the parameter name in C++ (which was a very confusing choice of symbol because an '&' in front of variables elsewhere in C generates pointers!) causes the actual variable itself, rather than a copy, to be used as the parameter in the subroutine and therefore can be written to thereby passing data back out the subroutine. Therefore
