@@ -210,3 +210,9 @@ std::cout << ++ref << "\n"; // error: increment of read-only reference ‘ref’
 ## References
 
 1. [C++ rvalue references and move semantics for beginners](https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners)
+
+# Part 3: Value categories
+
+## References
+
+1. [Value categories](https://en.cppreference.com/w/cpp/language/value_category)
