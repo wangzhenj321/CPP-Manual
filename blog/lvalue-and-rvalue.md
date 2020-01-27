@@ -85,8 +85,128 @@ int& setGlobal()
 setGlobal() = 400; // OK
 ```
 
+It works because here `setGlobal` returns a reference, unlike `setValue()` above. A reference is something that points to an existing memory location (the `global` variable) thus is an lvalue, so it can be assigned to. Watch out for `&` here: it's not the address-of operator, it defines the type of what's returned (a reference).
 
+The ability to return lvalues from functions looks pretty obscure, yet it is useful when you are doing advanced stuff like implementing some overloaded operators. More on that in future chapters.
+
+## Lvalue to rvalue conversion
+
+An lvalue may get converted to an rvalue: that's something perfectly legit and it happens quite often. Let's think of the addition `+` operator for example. According to the C++ specifications, it takes two rvalues as arguments and returns an rvalue.
+
+Let's look at the following snippet:
+
+```c++
+int x = 1;
+int y = 3;
+int z = x + y;   // ok
+```
+
+Wait a minute: `x` and `y` are lvalues, but the addition operator wants rvalues: how come? The answer is quite simple: `x` and `y` have undergone an implicit lvalue-to-rvalue conversion. Many other operators perform such conversion — subtraction, addition and division to name a few.
+
+## Lvalue references
+
+What about the opposite? Can an rvalue be converted to lvalue? Nope. It's not a technical limitation, though: it's the programming language that has been designed that way.
+
+In C++, when you do stuff like
+
+```c++
+int y = 10;
+int& yref = y;
+yref++;        // y is now 11
+```
+
+you are declaring `yref` as of type `int&`: a reference to `y`. It's called an lvalue reference. Now you can happily change the value of `y` through its reference `yref`.
+
+We know that a reference must point to an existing object in a specific memory location, i.e. an lvalue. Here `y` indeed exists, so the code runs flawlessly.
+
+Now, what if I shortcut the whole thing and try to assign `10` directly to my reference, without the object that holds it?
+
+```c++
+int& yref = 10;  // will it work?
+```
+
+On the right side we have a temporary thing, an rvalue that needs to be stored somewhere in an lvalue.
+
+On the left side we have the reference (an lvalue) that should point to an existing object. But being `10` a numeric constant, i.e. without a specific memory address, i.e. an rvalue, the expression clashes with the very spirit of the reference.
+
+If you think about it, that's the forbidden conversion from rvalue to lvalue. A volatile numeric constant (rvalue) should become an lvalue in order to be referenced to. If that would be allowed, you could alter the value of the numeric constant through its reference. Pretty meaningless, isn't it? Most importantly, what would the reference point to once the numeric value is gone?
+
+The following snippet will fail for the very same reason:
+
+```c++
+void fnc(int& x)
+{
+}
+
+int main()
+{
+    fnc(10);  // Nope!
+    // This works instead:
+    // int x = 10;
+    // fnc(x);
+}
+```
+
+I'm passing a temporary rvalue (`10`) to a function that takes a reference as argument. Invalid rvalue to lvalue conversion. There's a workaround: create a temporary variable where to store the rvalue and then pass it to the function (as in the commented out code). Quite inconvenient when you just want to pass a number to a function, isn't it?
+
+## Const lvalue reference to the rescue
+
+That's what GCC would say about the last two code snippets:
+
+```
+error: invalid initialization of non-const reference of type 'int&' from an rvalue of type 'int'
+```
+
+GCC complains about the reference not being const, namely a constant. According to the language specifications, you are allowed to bind a const lvalue to an rvalue. So the following snippet works like a charm:
+
+```c++
+const int& ref = 10;  // OK!
+```
+
+And of course also the following one:
+
+```c++
+void fnc(const int& x)
+{
+}
+
+int main()
+{
+    fnc(10);  // OK!
+}
+```
+
+The idea behind is quite straightforward. The literal constant `10` is volatile and would expire in no time, so a reference to it is just meaningless. Let's make the reference itself a constant instead, so that the value it points to can't be modified. Now the problem of modifying an rvalue is solved for good. Again, that's not a technical limitation but a choice made by the C++ folks to avoid silly troubles.
+
+This makes possible the very common C++ idiom of accepting values by constant references into functions, as I did in the previous snipped above, which avoids unnecessary copying and construction of temporary objects.
+
+Under the hood the compiler creates an hidden variable for you (i.e. an lvalue) where to store the original literal constant, and then bounds that hidden variable to your reference. That's basically the same thing I did manually in a couple of snippets above. For example:
+
+```c++
+// the following...
+const int& ref = 10;
+
+// ... would translate to:
+int __internal_unique_name = 10;
+const int& ref = __internal_unique_name;
+```
+
+Now your reference points to something that exists for real (until it goes out of scope) and you can use it as usual, except for modifying the value it points to:
+
+```c++
+const int& ref = 10;
+std::cout << ref << "\n";   // OK!
+std::cout << ++ref << "\n"; // error: increment of read-only reference ‘ref’
+```
 
 ## References
 
 1. [Understanding the meaning of lvalues and rvalues in C++](https://www.internalpointers.com/post/understanding-meaning-lvalues-and-rvalues-c)
+
+# Part 2: C++ rvalue references and move semantics for beginners
+
+
+
+## References
+
+1. [C++ rvalue references and move semantics for beginners](https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners)
