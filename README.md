@@ -24,11 +24,13 @@ Basic manual about how to use C++
 
 1. [auto and decltype](blog/auto-and-decltype.md)
 1. [const](blog/const.md)
+1. [volatile](blog/volatile.md)
+1. [mutable](blog/mutable.md)
 1. [cast](blog/cast.md)
 1. [explicit](blog/explicit.md)
 1. [extern](blog/extern.md)
 1. [virtual](blog/virtual.md)
-1. [volatile vs atomic](blog/volatile-vs-atomic.md)
+1. [atomic](blog/atomic.md)
 
 ## Modules
 
