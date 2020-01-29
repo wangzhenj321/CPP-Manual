@@ -57,6 +57,13 @@ int const * const Constant4
 
 declares that *Constant4* is **constant pointer to a constant integer**. Basically 'const' applies to whatever is on its immediate left (other than if there is nothing there in which case it applies to whatever is its immediate right).
 
+> ```
+> shared_ptr<T> p;             ---> T * p;                                    : nothing is const
+> const shared_ptr<T> p;       ---> T * const p;                              : p is const
+> shared_ptr<const T> p;       ---> const T * p;       <=> T const * p;       : *p is const
+> const shared_ptr<const T> p; ---> const T * const p; <=> T const * const p; : p and *p are const.
+> ```
+
 ## Use of 'const' in Functions Return Values
 
 Of the possible combinations  of pointers and 'const', the constant pointer to a variable is useful for storage that can be changed in value but not moved in memory.
