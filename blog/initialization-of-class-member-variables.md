@@ -379,7 +379,7 @@ int main () {
 The **default constructor** is the constructor that takes no parameters, and it is special because it is called when an object is declared but is not initialized with any arguments. In the example above, the **default constructor** is called for `rectb`. Note how `rectb` is not even constructed with an empty set of parentheses - in fact, **empty parentheses cannot be used to call the default constructor**:
 
 ```c++
-ectangle rectb;   // ok, default constructor called
+Rectangle rectb;   // ok, default constructor called
 Rectangle rectc(); // oops, default constructor NOT called
 ```
 
