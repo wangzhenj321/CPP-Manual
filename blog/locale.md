@@ -112,7 +112,8 @@ LANGUAGE是设置应用程序的界面语言。而LANG是优先级很低的一�
 int main() {
     // char *setlocale(int category, const char *locale);
     
-    // If locale is "", each part of the locale that should be modified is set according to the environment variables.
+    // If locale is "", each part of the locale that should be modified is
+    // set according to the environment variables.
     setlocale(LC_ALL, "");
     
     // If locale is NULL, the current locale is only queried, not modified.
