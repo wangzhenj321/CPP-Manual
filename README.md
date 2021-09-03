@@ -59,6 +59,7 @@ Basic manual about how to use C++
 1. [ASCII Unicode UTF8](blog/ASCII-Unicode-UTF8.md)
 1. [initialization of class member variables](blog/initialization-of-class-member-variables.md)
 1. [install the latest version of gcc](blog/install-the-latest-version-of-gcc.md)
+1. [locale](blog/locale.md)
 1. [not using namespace std](blog/not-using-namespace-std.md)
 1. [pointer variable vs reference variable](blog/pointer-variable-vs-reference-variable.md)
 1. [pragma once vs ifndef](blog/pragma-once-vs-ifndef.md)
