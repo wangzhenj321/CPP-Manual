@@ -102,8 +102,9 @@ echo "export LC_ALL=zh_CN.utf8" >> /etc/profile
 
 ## LANG和LANGUAGE的区别
 
-LANG: Specifies the default locale for all unset locale variables
-LANGUAGE: Most programs use this for the language of its interface
+- LANG: Specifies the default locale for all unset locale variables
+- LANGUAGE: Most programs use this for the language of its interface
+
 LANGUAGE是设置应用程序的界面语言。而LANG是优先级很低的一个变量，它指定所有与locale有关的变量的默认值
 
 ## setlocale
