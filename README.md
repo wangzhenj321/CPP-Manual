@@ -73,3 +73,4 @@ Basic manual about how to use C++
 1. [syntactic vs semantic](blog/syntactic-and-semantic.md)
 1. [unscoped scoped enum](blog/unscoped-scoped-enum.md)
 1. [xxxxh vs cxxxx](blog/xxxxh-vs-cxxxx.md)
+1. [开源许可证](blog/开源许可证.md)
