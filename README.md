@@ -56,7 +56,7 @@ Basic manual about how to use C++
 1. [QA](blog/QA.md)
 1. [an unnamed namespace used instead of static](blog/an-unnamed-namespace-used-instead-of-static.md)
 1. [array assignment and initialization](blog/array-assignment-and-initialization.md)
-1. [ASCII-Unicode-UTF8](blog/ASCII-Unicode-UTF8.md)
+1. [ASCII Unicode UTF8](blog/ASCII-Unicode-UTF8.md)
 1. [initialization of class member variables](blog/initialization-of-class-member-variables.md)
 1. [install the latest version of gcc](blog/install-the-latest-version-of-gcc.md)
 1. [xxxxh vs cxxxx](blog/xxxxh-vs-cxxxx.md)
