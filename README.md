@@ -11,6 +11,7 @@ Basic manual about how to use C++
 1. [function templates and class templates](blog/function-templates-and-class-templates.md)
 1. [inheritance](blog/inheritance.md)
 1. [inline function](blog/inline-function.md)
+1. [lvalue and rvalue](blog/lvalue-and-rvalue.md)
 1. [overload vs override vs overwrite](blog/overload-override-overwrite.md)
 1. [polymorphism](blog/polymorphism.md)
 1. [smart pointer](blog/smart-pointer.md)
