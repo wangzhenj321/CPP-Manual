@@ -111,6 +111,7 @@ LANGUAGE是设置应用程序的界面语言。而LANG是优先级很低的一�
 
 ```c++
 int main() {
+    // man 3 setlocale
     // char *setlocale(int category, const char *locale);
     
     // If locale is "", each part of the locale that should be modified is
