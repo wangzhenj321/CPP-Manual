@@ -36,7 +36,7 @@ Basic manual about how to use C++
 
 ## Modules
 
-1. [cpp time class](blog/cpp_time_class.md)
+1. [cpp time class](blog/cpp-time-class.md)
 2. [string cstdio](blog/string-cstdio.md)
 
 ## Debug
