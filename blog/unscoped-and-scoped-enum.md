@@ -90,3 +90,7 @@ int _tmain(int argc, _TCHAR* argv[])
 ```
 
 Furthermore the main method shows another nice concept of the strong enumerator. **It is strongly typed and therefore you cannot assign its values to an integer variable.**
+
+## References
+
+1. [19.3 Enumerations](../book/C++.Primer.5th.Edition_2013.pdf)
