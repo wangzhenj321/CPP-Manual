@@ -72,6 +72,6 @@ Basic manual about how to use C++
 15. [stdafx.h](blog/stdafx.h.md)
 16. [struct and typedef struct](blog/struct-and-typedef-struct.md)
 17. [syntactic vs semantic](blog/syntactic-and-semantic.md)
-18. [unscoped scoped enum](blog/unscoped-scoped-enum.md)
+18. [unscoped vs scoped enum](blog/unscoped-and-scoped-enum.md)
 19. [xxxxh vs cxxxx](blog/xxxxh-vs-cxxxx.md)
 20. [开源许可证](blog/开源许可证.md)
