@@ -2,3 +2,4 @@
 2. [C++11智能指针之shared_ptr](https://blog.csdn.net/xiejingfa/article/details/50750037)
 3. [C++11智能指针之unique_ptr](https://blog.csdn.net/Xiejingfa/article/details/50759210)
 4. [C++11智能指针之weak_ptr](https://blog.csdn.net/Xiejingfa/article/details/50772571)
+5. [Self-contained header files in C/C++](https://stackoverflow.com/questions/1892043/self-contained-header-files-in-c-c)
