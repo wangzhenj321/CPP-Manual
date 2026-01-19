@@ -3,3 +3,5 @@
 3. [C++11智能指针之unique_ptr](https://blog.csdn.net/Xiejingfa/article/details/50759210)
 4. [C++11智能指针之weak_ptr](https://blog.csdn.net/Xiejingfa/article/details/50772571)
 5. [Self-contained header files in C/C++](https://stackoverflow.com/questions/1892043/self-contained-header-files-in-c-c)
+6. [C++ class header files organization](https://stackoverflow.com/questions/346058/c-class-header-files-organization)
+7. [What is a "translation unit" in C++?](https://stackoverflow.com/questions/1106149/what-is-a-translation-unit-in-c)
